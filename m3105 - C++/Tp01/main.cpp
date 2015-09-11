@@ -13,8 +13,8 @@ int main(int argc, char** argv) {
         NombreContraint<float> entier(val, min, max);
         //entier.afficher();
         //cin >> entier;
-        //cout << entier;
-        entier.afficher();
+        cout << entier;
+        //entier.afficher();
         //cout << "Pas d’exception levée" << endl;
         
         

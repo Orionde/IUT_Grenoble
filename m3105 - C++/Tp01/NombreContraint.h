@@ -22,8 +22,7 @@ public:
 
     operator NombreContraint();
 
-    friend template <class TypeNumerique> ostream & operator <<(ostream & cout, const NombreContraint<TypeNumerique> & n);
-    friend template <class TypeNumerique> istream& operator >>(istream& cin, NombreContraint<TypeNumerique> & n);
+
 
 
 private:
@@ -32,7 +31,8 @@ private:
     TypeNumerique m_val;
 
 };
-
+template <class TypeNumerique> ostream & operator <<(ostream & cout, const NombreContraint<TypeNumerique> & n);
+template <class TypeNumerique> istream& operator >>(istream& cin, NombreContraint<TypeNumerique> & n);
 
 #include "NombreContraint.cpp"
 #endif
