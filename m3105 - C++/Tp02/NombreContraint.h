@@ -9,9 +9,9 @@ template <class TypeNumerique>
 class NombreContraint {
 public:
     NombreContraint<TypeNumerique>(TypeNumerique valeur = 0, TypeNumerique min = 0, TypeNumerique max = 100);
-    TypeNumerique getMin();
-    TypeNumerique getMax();
-    TypeNumerique getVal();
+    TypeNumerique getMin() const;
+    TypeNumerique getMax() const;
+    TypeNumerique getVal() const;
 
     void setVal(TypeNumerique val);
 

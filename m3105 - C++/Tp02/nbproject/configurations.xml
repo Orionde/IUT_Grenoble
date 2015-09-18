@@ -4,8 +4,12 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>EntierContraint.h</itemPath>
-      <itemPath>NombreContraint.h</itemPath>
+      <itemPath>Billet.h</itemPath>
+      <itemPath>BilletReduit.h</itemPath>
+      <itemPath>NombreContraint.cpp</itemPath>
+      <itemPath>Promotion.h</itemPath>
+      <itemPath>Tarif.h</itemPath>
+      <itemPath>Trajet.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,6 +18,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Billet.cpp</itemPath>
+      <itemPath>BilletReduit.cpp</itemPath>
+      <itemPath>NombreContraint.h</itemPath>
+      <itemPath>Promotion.cpp</itemPath>
+      <itemPath>Tarif.cpp</itemPath>
+      <itemPath>Trajet.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -37,13 +47,30 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
-        <ccTool>
-          <standard>8</standard>
-        </ccTool>
       </compileType>
-      <item path="EntierContraint.h" ex="false" tool="3" flavor2="0">
+      <item path="Billet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Billet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BilletReduit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BilletReduit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NombreContraint.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NombreContraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Promotion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Promotion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tarif.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tarif.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Trajet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Trajet.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -68,9 +95,29 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="EntierContraint.h" ex="false" tool="3" flavor2="0">
+      <item path="Billet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Billet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BilletReduit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BilletReduit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NombreContraint.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NombreContraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Promotion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Promotion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tarif.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tarif.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Trajet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Trajet.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

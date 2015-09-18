@@ -56,6 +56,6 @@ ostream& operator <<(ostream& cout, const EntierContraint & n) {
 
 istream& operator >>(istream& cin, EntierContraint& n) {
     n.saisir(cin);
-    return(cin);    
+    return(cin);
 }
 

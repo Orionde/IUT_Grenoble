@@ -17,17 +17,17 @@ NombreContraint<TypeNumerique>::NombreContraint(TypeNumerique val, TypeNumerique
 }
 
 template <class TypeNumerique>
-TypeNumerique NombreContraint<TypeNumerique>::getMin() {
+TypeNumerique NombreContraint<TypeNumerique>::getMin() const {
 	return m_min;
 }
 
 template <class TypeNumerique>
-TypeNumerique NombreContraint<TypeNumerique>::getMax() {
+TypeNumerique NombreContraint<TypeNumerique>::getMax() const{
 	return m_max;
 }
 
 template <class TypeNumerique>
-TypeNumerique NombreContraint<TypeNumerique>::getVal() {
+TypeNumerique NombreContraint<TypeNumerique>::getVal() const {
 	return m_val;
 }
 
