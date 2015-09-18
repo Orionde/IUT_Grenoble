@@ -8,6 +8,8 @@ int main() {
     Tarif tarif("Normal", 2);
     Billet billet(trajet, tarif);
     billet.afficher(cout);
+    Client c("Hubert");
+    c.add(billet);
 
     return 0;
 }

@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Billet.o \
 	${OBJECTDIR}/BilletReduit.o \
+	${OBJECTDIR}/Client.o \
 	${OBJECTDIR}/NombreContraint.o \
 	${OBJECTDIR}/Promotion.o \
 	${OBJECTDIR}/Tarif.o \
@@ -77,6 +78,11 @@ ${OBJECTDIR}/BilletReduit.o: BilletReduit.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BilletReduit.o BilletReduit.cpp
+
+${OBJECTDIR}/Client.o: Client.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Client.o Client.cpp
 
 ${OBJECTDIR}/NombreContraint.o: NombreContraint.cpp 
 	${MKDIR} -p ${OBJECTDIR}
