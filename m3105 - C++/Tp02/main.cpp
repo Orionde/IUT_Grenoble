@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include "Billet.h"
+#include "Client.h"
 
 using namespace std;
 
@@ -9,7 +10,7 @@ int main() {
     Billet billet(trajet, tarif);
     billet.afficher(cout);
     Client c("Hubert");
-    c.add(billet);
+    c.addBillet(billet);
 
     return 0;
 }

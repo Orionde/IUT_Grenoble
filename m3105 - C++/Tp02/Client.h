@@ -12,12 +12,12 @@ class Client {
 
 public:
     Client(const string nom);
-    string getNom() const ;
-    vector<Billet> getBillets() const;
-    void addBillet(Billet b) const;
+    string getNom() const;
+    const vector<const Billet*>& getBillets() const;
+    void addBillet(const Billet &b);
 private:
     string m_nom;
-    vector<Billet> m_billets;
+    vector<const Billet*> m_billets;
 
 };
 
