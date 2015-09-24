@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Billet.o \
 	${OBJECTDIR}/BilletReduit.o \
 	${OBJECTDIR}/Client.o \
+	${OBJECTDIR}/Conteneur.o \
 	${OBJECTDIR}/NombreContraint.o \
 	${OBJECTDIR}/Promotion.o \
 	${OBJECTDIR}/Tarif.o \
@@ -83,6 +84,11 @@ ${OBJECTDIR}/Client.o: Client.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Client.o Client.cpp
+
+${OBJECTDIR}/Conteneur.o: Conteneur.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Conteneur.o Conteneur.cpp
 
 ${OBJECTDIR}/NombreContraint.o: NombreContraint.cpp 
 	${MKDIR} -p ${OBJECTDIR}

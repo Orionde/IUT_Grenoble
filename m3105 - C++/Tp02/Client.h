@@ -15,6 +15,8 @@ public:
     string getNom() const;
     const vector<const Billet*>& getBillets() const;
     void addBillet(const Billet &b);
+    void afficher(std::ostream& cout) const;
+    float getPrix() const;
 private:
     string m_nom;
     vector<const Billet*> m_billets;

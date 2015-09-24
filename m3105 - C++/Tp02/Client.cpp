@@ -7,12 +7,14 @@ string Client::getNom() const {
     return m_nom;
 }
 
-const vector<const Billet*>& Client::getBillets() const
-{
+const vector<const Billet*>& Client::getBillets() const {
     return m_billets;
 }
 
- void Client::addBillet(const Billet &b)
- {
-     m_billets.push_back(&b);
- }
+void Client::addBillet(const Billet &b) {
+    m_billets.push_back(&b);
+}
+
+void Client::afficher(std::ostream& cout) const {
+    cout << m_nom;
+}
