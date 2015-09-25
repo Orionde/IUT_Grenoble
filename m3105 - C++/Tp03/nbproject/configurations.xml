@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Billet.h</itemPath>
+      <itemPath>BilletReduit.h</itemPath>
+      <itemPath>Client.h</itemPath>
+      <itemPath>Conteneur.h</itemPath>
+      <itemPath>NombreContraint.cpp</itemPath>
+      <itemPath>Pack.h</itemPath>
+      <itemPath>Produit.h</itemPath>
+      <itemPath>Promotion.h</itemPath>
+      <itemPath>Reservation.h</itemPath>
+      <itemPath>Tarif.h</itemPath>
+      <itemPath>Trajet.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Billet.cpp</itemPath>
+      <itemPath>BilletReduit.cpp</itemPath>
+      <itemPath>Client.cpp</itemPath>
+      <itemPath>Conteneur.cpp</itemPath>
+      <itemPath>NombreContraint.h</itemPath>
+      <itemPath>Pack.cpp</itemPath>
+      <itemPath>Produit.cpp</itemPath>
+      <itemPath>Promotion.cpp</itemPath>
+      <itemPath>Reservation.cpp</itemPath>
+      <itemPath>Tarif.cpp</itemPath>
+      <itemPath>Trajet.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+      </compileType>
+      <item path="Billet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Billet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BilletReduit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BilletReduit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Conteneur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Conteneur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NombreContraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NombreContraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Produit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Produit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Promotion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Promotion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Reservation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Reservation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tarif.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tarif.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Trajet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Trajet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Billet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Billet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BilletReduit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BilletReduit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Conteneur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Conteneur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NombreContraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NombreContraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Produit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Produit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Promotion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Promotion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Reservation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Reservation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tarif.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tarif.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Trajet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Trajet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
