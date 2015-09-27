@@ -7,10 +7,10 @@
 class BilletReduit : public Billet {
 
     private :
-        const Promotion& m_promotion;        
-    public:    
+        const Promotion& m_promotion;
+    public:
 
-    BilletReduit(const Trajet& unTrajet, const Tarif& unTarif, const Promotion& unePromo);
+    BilletReduit(std::string nom, const Trajet& unTrajet, const Tarif& unTarif, const Promotion& unePromo);
 
     float getPrix() const;
 

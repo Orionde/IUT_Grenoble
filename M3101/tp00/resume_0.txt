@@ -1,0 +1,13 @@
+Compte rendu du tp00
+
+1
+2.1.4 :
+	mkdir $(date -I)
+	ou mkdir `date -I`
+
+Création d'un script
+-> #!/bin/zsh ou #!/bin/bash, selon l'humeur
+-> Penser à faire un chmod +x sur le script pour pouvoir l'exécuter !
+
+Récupération d'un scrip
+-> Vérifier s'il doit être exécuté par bash ou zsh !

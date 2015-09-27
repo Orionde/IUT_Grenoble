@@ -2,15 +2,16 @@
 #define	BILLET_H
 #include "Trajet.h"
 #include "Tarif.h"
+#include "Produit.h"
 
-class Billet {
+class Billet : public Produit{
 
 private:
     const Trajet & m_trajet;
     const Tarif & m_tarif;
 
 public:
-    Billet(const Trajet& untrajet, const Tarif& untarif);
+    Billet(std:: string nom, const Trajet& untrajet, const Tarif& untarif);
 
     const Trajet& getTrajet() const;
 

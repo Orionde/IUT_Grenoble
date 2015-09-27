@@ -1,0 +1,32 @@
+==Sur les inclusions
+	Dans le main
+		Mettre les include de tous les objets déclarés dans le main, on sait jamais
+	Dans le .cpp
+		Si fichier normal
+			Uniquement l'include du .h
+		Si template
+			
+	Dans le .h
+		Si fichier normal
+			Idem main
+		Si template
+			
+
+==Sur l'affichage
+	Oublier de mettre un & dans les paramètres
+		-> void afficher(std::ostream & cout)
+	Afficher un vector
+
+	Afficher un vector de pointeurs sur des objets
+		for(auto ptr : m_variable)
+			ptr->afficher();
+		//On imagine qu'on a fait une méthode afficher dans la classe de notre objet
+
+==Sur les modifications du code
+	Oublier de mettre à jour le prototype dans le .h
+
+==Sur les const
+	const est un type.
+
+	Sur les incohérences type déclaré/paramètre pris
+		ex : déclarer un vector truc<const Object*> et faire une fonction d'ajout void add(Object) -> sans mettre de const

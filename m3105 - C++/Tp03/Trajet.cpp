@@ -35,5 +35,5 @@ void Trajet::saisir(std::istream& cin) {
 }
 
 void Trajet::afficher(std::ostream& cout) const {
-    cout << m_distance << m_villeDepart << m_villeArrivee;
+    cout << ' '<< m_distance << ' '<< m_villeDepart << ' ' << m_villeArrivee;
 }

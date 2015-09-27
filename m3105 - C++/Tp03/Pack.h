@@ -13,10 +13,9 @@ public:
     float getPrix() const;
     void afficher(std::ostream &cout) const;
     void ajouter(Produit &produit);
-    
+
 private:
     std::vector<Produit*> m_produits;
 };
 
 #endif
-

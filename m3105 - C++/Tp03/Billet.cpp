@@ -1,6 +1,6 @@
 #include "Billet.h"
 
-Billet::Billet(const Trajet& untrajet, const Tarif& untarif) : 
+Billet::Billet(std::string nom, const Trajet& untrajet, const Tarif& untarif) : Produit(nom), 
 m_trajet(untrajet), m_tarif(untarif){}
 
 const Trajet& Billet::getTrajet() const {

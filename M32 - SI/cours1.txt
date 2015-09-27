@@ -1,0 +1,116 @@
+veille strategique = business intelligence
+
+==	L'INFORMATION, UN FACTEUR DE MOTIVATION
+	Pour s'impliquer dans l'entreprise, le salarié doit être correctement informé. 
+		-> Climat de transparence
+		-> Absence de rétention d'INFORMATION
+LA PROTECTION DES INFORMATIONS
+	Risques informatiques
+		->Piratage
+		->Vius
+		->Non restpect des règles de confidentialité(vol mdp, etc)
+		->Déliquance informationnelle (vol de fichiers)
+	--> On peut bloquer le système d'information d'une entreprise pour forcer une entreprise a faire des trucs 
+	=> Importance de la sécurité informatique
+
+IV) DÉFINITION ET ENJEUX DES SI
+	A) Définition
+		systèmes informatiques : référence aux matériels, technologies, langages, standards qui sont utilisés pour produire de l'info
+		Objectif du management des SI : développemet det utilisation de SI aidant les métiers à atteindre leurs objectifs :
+			->Inclut la maîtrise des technologies
+			->S'intéresse au contexte d'utilisation
+			->Assure la gestion de la ressource
+
+//Retour sur investissement : vérifier si un nouvel outil fait gagner de l'argent, ou pas
+
+B)EXEMPLE DE SYSTÈME D'INFO
+	Avant : répertoires papier
+	Maintenant : smartphones, mails, fb...
+	Quel est le plus efficace ? Et quel est le moins cher finalement ?
+		-> On peut se retrouver dans un engrenage de plus en plus coûteux
+
+C)LES COMPOSANTS D'UN SI
+	GO SUR L'INTRAAAAA
+
+Exemple : Faire la fiche de paye d'un salarié
+	-> vérifier s'il fait ses heures ->
+		Pointeuse : On connait l'heure de début et de fin, à transformer en durée
+		-> Infos à stocker, on va pas forcément l'utiliser tout de suite
+
+PERSONEL(spécialistes ou users)
+	Individu, groupe, interne, partenaire, client, banque...
+
+MATÉRIEL (machines, supports)
+	Serveurs, télécoms, architechture, pc, réseaux, internet, téléphone
+
+LOGICIELS ET PROCESSUS (prog, méthodes)
+	Messagerie, bureautique, itra, appli métiers
+	Qui fait quoi, comment, quand, avec quelles donées ?
+
+DONNÉES(connaissances, modèles)
+	Suivi des flux opérationnels(nb produis stock&co), synthèse des ventes...
+
+
+D)	LES DIMENSIONS D'UN SI
+		
+		Les personnes ne savent pas toujours de quoi elles ont besoin, il faut leur conseiller, intéragir avec les utlisateurs. Les utilisateurs seront pas toujours d'accord, faut les convaincre (les informaticiens font peur, ils pensent qu'on veut leur refiler des trucs dont ils n'ont pas besoin)
+
+		Si c'est pour une entreprise, regarder son mode de fonctionnement (projet, à la chaine...) -> Proposer un outil adapté
+
+		Il faut ensuite choisir la bonne technologie : inutile si pas adapté
+
+		Le coût
+
+E)PRÉSENTATION SELON LE DÉGRÉ DE FORMALISATION
+
+	SI						Caractéristiques
+
+	FORMEL					Information structurée, sous forme écrité, 
+							Correspond à des événements répétitifs, bien analysés
+
+	INFORMEL				Informations sous forme quelconque
+							Pas de régles précises de traitement et pas de traces
+							-->Souplesse, rapidité
+
+Les infos informelles sont utiles aussi, en ce cas, on peut essayer de les rendre formelles pour que tout le monde puisse en profiter
+
+F)SELON LE DEGRÉ D'AUTOMATISATION
+
+	MANUEL
+		Opération assurées par l'homme, sans recours à des machines
+		Pour de petis volumes et tâches mal définies
+	
+	AUTOMATISÉ	
+		Opérations assuées par un ordinateur sans intervention humaine (sauf préparation)
+		Pour de gros volumes et travaux répétitifs
+	
+	ASSISTÉ
+		Opérations assurées grâce à un un dialogue homme-machines
+		Domaine de l'aide à la décision
+
+G)SELON LE NOMBRE D'utilisateurs
+	
+	INDIVIDUEL
+		Système utilisé par un seul individu, à son poste de travail
+
+	COLLECTIF
+		Plusieurs individus dans l'organisation utilisent le même système. Concerne une fonction, un service, un groupe...
+
+	ORGANISATIONNEL
+		Accessible à l'ensemble des membres de l'organisation
+		Concerne toute l'organisation
+	INTER-ORGANISATIONNEL
+		Des organisations différents s'entendent pour échanger et traiter, par des voies automatiques, des informations d'intérêt commun
+
+H)PRÉSENTATION SELON A FONCTION DU SI
+	Go intra
+
+================================CHAPITRE 2 : LES 4 DIMENSIONS DES SI=======================================
+A)LA DIMENSION TECHNOLOGIQUE
+	Les équipements sont de plus en plus puissants, de plus en plus transportables et de moins en moins chers
+	Apparition des cloud
+
+	--Evolution des applications des tic
+		go intra
+
+	Heuristiques : programmes conçus pour suggérer des choix, stratégique

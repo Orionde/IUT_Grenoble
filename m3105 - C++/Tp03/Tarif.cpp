@@ -19,5 +19,5 @@ void Tarif::saisir(std::istream& cin) {
 }
 
 void Tarif::afficher(std::ostream& cout) const {
-    cout << m_libelle << m_prixAuKm;
+    cout << ' ' << m_libelle << ' ' << m_prixAuKm;
 }

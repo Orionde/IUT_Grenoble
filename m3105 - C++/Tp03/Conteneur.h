@@ -1,6 +1,5 @@
-
 #ifndef CONTENEUR_H
-#define	CONTENEUR_H
+#define CONTENEUR_H
 
 #include <string>
 #include <iostream>
@@ -11,16 +10,15 @@ using namespace std;
 template <class T> 
 
 class Conteneur {
-public:
-    Conteneur();
-    void ajouter(const T & element);
-    void afficher(ostream & cout);
-    const T &  choisirElement(ostream & cout, istream &cin);
+	public:
+		Conteneur();
+		void ajouter(const T & element);
+		void afficher(ostream & cout);
+		const T &  choisirElement(ostream & cout, istream &cin);
 
-private:
-    vector<const T*> m_contenu;
+	private:
+		vector<const T*> m_contenu;
 };
 
 #include "Conteneur.cpp"
 #endif
-
