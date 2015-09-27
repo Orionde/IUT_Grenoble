@@ -7,10 +7,20 @@
 
 using namespace std;
 
-template <class T> 
+template <class T> class Singleton
+{
+    public :
+        static T& Instance()
+        {
+            static T object;
+            return object;
+        }
+};
 
-class Conteneur {
-	public:
+class Conteneur : public Singleton<OnlyOne>{
+    
+    friend class Singleton<OnlyOne>;
+        public:
 		Conteneur();
 		void ajouter(const T & element);
 		void afficher(ostream & cout);
