@@ -3,6 +3,17 @@
 #ifdef CONTENEUR_H
 
 template <class T>
+Conteneur<T>* Conteneur<T>::m_instance = nullptr;
+
+template <class T>
+Conteneur<T>* Conteneur<T>::getInstance()
+{
+    if(m_instance == nullptr)
+        m_instance = new Conteneur;
+    return m_instance;
+}
+
+template <class T>
 Conteneur<T>::Conteneur() : m_contenu() {
 }
 
@@ -18,7 +29,7 @@ void Conteneur<T>::afficher(ostream & cout) {
 }
 
 template <class T>
-const T & Conteneur<T>::choisirElement(ostream & cout, istream & cin) {
+const T & Conteneur<T>::choisirElement() {
 	NombreContraint<int> n(1, 1, m_contenu.size());
 	bool ok;
 	do{

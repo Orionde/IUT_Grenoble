@@ -30,3 +30,5 @@
 
 	Sur les incohérences type déclaré/paramètre pris
 		ex : déclarer un vector truc<const Object*> et faire une fonction d'ajout void add(Object) -> sans mettre de const
+
+==Oublier le }; à la fin du .h

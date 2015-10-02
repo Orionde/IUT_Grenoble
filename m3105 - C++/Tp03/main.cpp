@@ -10,7 +10,7 @@ using namespace std;
 
 int main() {
     
-    Reservation resa("resa1", 2, 31.2);
+    /*Reservation resa("resa1", 2, 31.2);
     resa.afficher(cout);
     cout << endl;
     float prixtotal = resa.getPrix();
@@ -27,6 +27,8 @@ int main() {
     pack.ajouter(resa);
     pack.ajouter(billet1);
     
-    pack.afficher(cout);
+    pack.afficher(cout);*/
+    Conteneur <int> *c1 = Conteneur<int>::getInstance();
+    Conteneur <int> *c2 = Conteneur<int>::getInstance();
     return 0;
 }

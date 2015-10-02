@@ -8,7 +8,7 @@
       <itemPath>BilletReduit.h</itemPath>
       <itemPath>Client.h</itemPath>
       <itemPath>Conteneur.h</itemPath>
-      <itemPath>NombreContraint.cpp</itemPath>
+      <itemPath>NombreContraint.h</itemPath>
       <itemPath>Pack.h</itemPath>
       <itemPath>Produit.h</itemPath>
       <itemPath>Promotion.h</itemPath>
@@ -27,7 +27,7 @@
       <itemPath>BilletReduit.cpp</itemPath>
       <itemPath>Client.cpp</itemPath>
       <itemPath>Conteneur.cpp</itemPath>
-      <itemPath>NombreContraint.h</itemPath>
+      <itemPath>NombreContraint.cpp</itemPath>
       <itemPath>Pack.cpp</itemPath>
       <itemPath>Produit.cpp</itemPath>
       <itemPath>Promotion.cpp</itemPath>
