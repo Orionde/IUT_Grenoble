@@ -42,6 +42,12 @@ OBJECTFILES= \
 	${OBJECTDIR}/SalarieException.o \
 	${OBJECTDIR}/main.o
 
+# Test Directory
+TESTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tests
+
+# Test Files
+TESTFILES= \
+	${TESTDIR}/TestFiles/f1
 
 # C Compiler Flags
 CFLAGS=
@@ -99,6 +105,106 @@ ${OBJECTDIR}/main.o: main.cpp
 
 # Subprojects
 .build-subprojects:
+
+# Build Test Targets
+.build-tests-conf: .build-conf ${TESTFILES}
+${TESTDIR}/TestFiles/f1: ${TESTDIR}/salarieTestRunner/newsimpletest.o ${OBJECTFILES:%.o=%_nomain.o}
+	${MKDIR} -p ${TESTDIR}/TestFiles
+	${LINK.cc}   -o ${TESTDIR}/TestFiles/f1 $^ ${LDLIBSOPTIONS} 
+
+
+${TESTDIR}/salarieTestRunner/newsimpletest.o: salarieTestRunner/newsimpletest.cpp 
+	${MKDIR} -p ${TESTDIR}/salarieTestRunner
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -I. -MMD -MP -MF "$@.d" -o ${TESTDIR}/salarieTestRunner/newsimpletest.o salarieTestRunner/newsimpletest.cpp
+
+
+${OBJECTDIR}/NomIncorrectException_nomain.o: ${OBJECTDIR}/NomIncorrectException.o NomIncorrectException.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/NomIncorrectException.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -O2 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NomIncorrectException_nomain.o NomIncorrectException.cpp;\
+	else  \
+	    ${CP} ${OBJECTDIR}/NomIncorrectException.o ${OBJECTDIR}/NomIncorrectException_nomain.o;\
+	fi
+
+${OBJECTDIR}/NumeroIncorrectException_nomain.o: ${OBJECTDIR}/NumeroIncorrectException.o NumeroIncorrectException.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/NumeroIncorrectException.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -O2 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NumeroIncorrectException_nomain.o NumeroIncorrectException.cpp;\
+	else  \
+	    ${CP} ${OBJECTDIR}/NumeroIncorrectException.o ${OBJECTDIR}/NumeroIncorrectException_nomain.o;\
+	fi
+
+${OBJECTDIR}/SalaireIncorrectException_nomain.o: ${OBJECTDIR}/SalaireIncorrectException.o SalaireIncorrectException.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/SalaireIncorrectException.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -O2 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SalaireIncorrectException_nomain.o SalaireIncorrectException.cpp;\
+	else  \
+	    ${CP} ${OBJECTDIR}/SalaireIncorrectException.o ${OBJECTDIR}/SalaireIncorrectException_nomain.o;\
+	fi
+
+${OBJECTDIR}/Salarie_nomain.o: ${OBJECTDIR}/Salarie.o Salarie.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/Salarie.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -O2 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Salarie_nomain.o Salarie.cpp;\
+	else  \
+	    ${CP} ${OBJECTDIR}/Salarie.o ${OBJECTDIR}/Salarie_nomain.o;\
+	fi
+
+${OBJECTDIR}/SalarieException_nomain.o: ${OBJECTDIR}/SalarieException.o SalarieException.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/SalarieException.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -O2 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SalarieException_nomain.o SalarieException.cpp;\
+	else  \
+	    ${CP} ${OBJECTDIR}/SalarieException.o ${OBJECTDIR}/SalarieException_nomain.o;\
+	fi
+
+${OBJECTDIR}/main_nomain.o: ${OBJECTDIR}/main.o main.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/main.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -O2 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main_nomain.o main.cpp;\
+	else  \
+	    ${CP} ${OBJECTDIR}/main.o ${OBJECTDIR}/main_nomain.o;\
+	fi
+
+# Run Test Targets
+.test-conf:
+	@if [ "${TEST}" = "" ]; \
+	then  \
+	    ${TESTDIR}/TestFiles/f1 || true; \
+	else  \
+	    ./${TEST} || true; \
+	fi
 
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}

@@ -13,50 +13,50 @@ void Salarie::setNom(std::string nom) {
     int i = 1;
     int res = 1;
 
-	std::cout << nom << std::endl;
+    std::cout << nom << std::endl;
     if (((('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'))) && nom.length() > 0) {
-        while (i < (int)nom.length() && res == 1) {
+        while (i < (int) nom.length() && res == 1) {
             if (((('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'))) || nom[i] == '-') {
-				std::cout << nom[i] << std::endl;
                 i++;
+            } else {
+                res = 0;
             }
-			else {
-				std::cout << "res = 0 on " << nom[i] << std::endl;
-				res = 0;
-			}
         }
     } else {
-		std::cout << "res = 0 on " << nom[i] << std::endl;
         res = 0;
     }
-    if (res == 0)
-		std::cout << "Pouet2" << std::endl;
+    if (res == 0) {
+
         throw NomIncorrectException(nom);
+    }
     m_nom = nom;
 }
 
 void Salarie::setNumeroSS(std::string numeroSS) {
     int res = 1;
     int i = 0;
-	std::cout << numeroSS << std::endl;
-    if (numeroSS.length() != 13) {
-        while (numeroSS[i]) {
-            if ('0' < numeroSS[i] && numeroSS[i] < '9')
+
+    std::cout << numeroSS << std::endl;
+
+    if (numeroSS.length() == 13) {
+        while (numeroSS[i] && res) {
+            if ('0' > numeroSS[i] || numeroSS[i] > '9') {
                 res = 0;
+
+            }
             i++;
         }
-    }
-    else
+    } else
         res = 0;
-    if (res == 0)
-		std::cout << "Pouet" << std::endl;
+    if (res == 0) {
         throw NumeroIncorrectException(numeroSS);
+    }
     m_numeroSS = numeroSS;
 
 }
 
 void Salarie::setSalaireMensuel(float salaireMensuel) {
-	std::cout << salaireMensuel << std::endl;
+    std::cout << salaireMensuel << std::endl;
 
 }
 
@@ -73,5 +73,5 @@ float Salarie::getSalaireMensuel() const {
 }
 
 float Salarie::getImpot() const {
-	return (7);
+    return (7);
 }

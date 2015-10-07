@@ -11,7 +11,7 @@ using namespace std;
 int main() {
 
     try {
-        Salarie s1("jacqueline", "jjjjjjjjjjjjj", 12.5);
+        Salarie s1("jacqueline", "1234567891234", 12.5);
     }
     catch(NomIncorrectException &e)
     {
