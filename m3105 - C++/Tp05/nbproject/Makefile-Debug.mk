@@ -38,6 +38,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/ArbreAbstrait.o \
 	${OBJECTDIR}/Interpreteur.o \
 	${OBJECTDIR}/Lecteur.o \
+	${OBJECTDIR}/Symbole.o \
+	${OBJECTDIR}/SymboleValue.o \
+	${OBJECTDIR}/TableSymboles.o \
 	${OBJECTDIR}/main.o
 
 
@@ -79,6 +82,21 @@ ${OBJECTDIR}/Lecteur.o: Lecteur.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Lecteur.o Lecteur.cpp
+
+${OBJECTDIR}/Symbole.o: Symbole.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Symbole.o Symbole.cpp
+
+${OBJECTDIR}/SymboleValue.o: SymboleValue.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SymboleValue.o SymboleValue.cpp
+
+${OBJECTDIR}/TableSymboles.o: TableSymboles.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TableSymboles.o TableSymboles.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
