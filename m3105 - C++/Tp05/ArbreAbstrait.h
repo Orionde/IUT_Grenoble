@@ -81,4 +81,66 @@ class NoeudInstSi : public Noeud {
     Noeud*  m_sequence;
 };
 
-#endif /* ARBREABSTRAIT_H */
+
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstTantQue : public Noeud {
+  public:
+    NoeudInstTantQue(Noeud* condition, Noeud* sequence);
+   ~NoeudInstTantQue() {}
+    int executer();
+    
+  private:
+    Noeud*  m_condition;
+    Noeud*  m_sequence;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstRepeter : public Noeud {
+  public:
+    NoeudInstRepeter(Noeud* condition, Noeud* sequence);
+   ~NoeudInstRepeter() {} 
+    int executer();
+
+  private:
+    Noeud*  m_condition;
+    Noeud*  m_sequence;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstPour : public Noeud {
+  public:
+    NoeudInstPour(Noeud* condition, Noeud* sequence);
+   ~NoeudInstPour() {} 
+    int executer();
+
+  private:
+    Noeud*  m_condition;
+    Noeud*  m_sequence;
+};
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstEcrire : public Noeud {
+  public:
+    NoeudInstEcrire(Noeud* condition, Noeud* sequence);
+   ~NoeudInstEcrire() {}
+    int executer();
+
+  private:
+    Noeud*  m_condition;
+    Noeud*  m_sequence;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstLire : public Noeud {
+  public:
+    NoeudInstLire(Noeud* condition, Noeud* sequence);
+   ~NoeudInstLire() {} 
+    int executer();
+
+  private:
+    Noeud*  m_condition;
+    Noeud*  m_sequence;
+};
+#endif
