@@ -211,15 +211,15 @@ Noeud* Interpreteur::instPour() {
 	
         if (m_lecteur.getSymbole() == "<VARIABLE>") {
             //Si on a une affectation
-		Noeud* affect1 = affectation();
+		Noeud* affect1 = expression();
 		testerEtAvancer(";");
 		affectation = 1;//Condition vérifiée
 	}
 	
         Noeud* condition = expression();//On aura une condition dans tous les cas
-	if (m_lecteur.getSymbole() == ";" && i) {
+	if (m_lecteur.getSymbole() == ";" && affectation) {
         //Si on a un ';' ET que le pour a commencé par une affectation
-		Noeud* affect2= affectation();
+		Noeud* affect2= expression();
 	}
 	testerEtAvancer(")");
 	Noeud* sequence = seqInst();

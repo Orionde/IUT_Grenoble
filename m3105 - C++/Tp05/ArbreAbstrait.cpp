@@ -116,7 +116,7 @@ NoeudInstPour::NoeudInstPour(Noeud* condition, Noeud* seq, Noeud* aff1, Noeud* a
 }
 
 int NoeudInstPour::executer() {
-    if(aff1 != nullptr && aff2 != nullptr)
+    if(m_affectation != nullptr && m_affectation1 != nullptr)
     {
         m_affectation->executer();
         m_affectation1->executer();
