@@ -204,23 +204,29 @@ Noeud* Interpreteur::instRepeter() {
 Noeud* Interpreteur::instPour() {
 	// <instPour>::= pour([<affectation>];<expression>;[<affectation>])
 	// <seqInst>finpour
-	int i = 0;
+	int affectation = 0;
 
 	testerEtAvancer("pour");
 	testerEtAvancer("(");
-	if (m_lecteur.getSymbole() == "<VARIABLE>") {
-		Noeud* affect = affectation();
+	
+        if (m_lecteur.getSymbole() == "<VARIABLE>") {
+            //Si on a une affectation
+		Noeud* affect1 = affectation();
 		testerEtAvancer(";");
-		i = 1;
+		affectation = 1;//Condition vérifiée
 	}
-	Noeud* condition = expression();
+	
+        Noeud* condition = expression();//On aura une condition dans tous les cas
 	if (m_lecteur.getSymbole() == ";" && i) {
-		Noeud* affect = affectation();
+        //Si on a un ';' ET que le pour a commencé par une affectation
+		Noeud* affect2= affectation();
 	}
 	testerEtAvancer(")");
 	Noeud* sequence = seqInst();
 	testerEtAvancer("finpour");
-	return nullptr;
+        if(affectation)
+            return NoeudInstPour(condition, sequence, affect1, affect2);
+        return NoeudInstPour(condition, sequence);
 }
 
 /*Noeud * Interpreteur::instEcrire() {

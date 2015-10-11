@@ -109,14 +109,16 @@ class NoeudInstRepeter : public Noeud {
 ////////////////////////////////////////////////////////////////////////////////
 class NoeudInstPour : public Noeud {
   public:
-    NoeudInstPour(Noeud* seq, Noeud* aff1 = nullptr, Noeud* aff2 = nullptr );
+    NoeudInstPour(Noeud* condition, Noeud* seq , Noeud* aff1 = nullptr, Noeud* aff2 = nullptr );
    ~NoeudInstPour() {} 
     int executer();
 
   private:
-    Noeud*  m_affectation;
+      Noeud* m_condition;
+      Noeud*  m_sequence;
+      Noeud*  m_affectation;
     Noeud*  m_affectation1;
-    Noeud*  m_sequence;
+    
 };
 
 

@@ -111,11 +111,17 @@ int NoeudInstRepeter::executer() {
 // NoeudInstPour
 ////////////////////////////////////////////////////////////////////////////////
 
-NoeudInstPour::NoeudInstPour(Noeud* seq, Noeud* aff1, Noeud* aff2)
-: m_sequence(seq), m_affectation(aff1), m_affectation1(aff2) {
+NoeudInstPour::NoeudInstPour(Noeud* condition, Noeud* seq, Noeud* aff1, Noeud* aff2)
+: m_condition(condition), m_sequence(seq), m_affectation(aff1), m_affectation1(aff2) {
 }
 
 int NoeudInstPour::executer() {
-  m_sequence->executer();
+    if(aff1 != nullptr && aff2 != nullptr)
+    {
+        m_affectation->executer();
+        m_affectation1->executer();
+    }
+    while(m_condition->executer())
+    m_sequence->executer();
   return 0; // La valeur renvoyée ne représente rien !
 }
