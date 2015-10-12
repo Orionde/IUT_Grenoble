@@ -2,8 +2,12 @@
 # Les lignes de commentaires commencent par #
 procedure principale()
   a = 0;
-  tantque(a < 4)
-  	a = a + 1;
-  fintantque
+  #tantque(a < 4)
+  	 #a = a + 1;
+  #fintantque
+  #i = 0;
+  pour(a = 0 ; a < 5 ; a = a + 1)
+    i = 9;
+  finpour
 finproc
 # Commentaire Final
