@@ -126,7 +126,7 @@ int NoeudInstPour::executer() {
 		while(m_condition->executer())
 		{
 			m_affectation1->executer();
-			//m_sequence->executer();
+			m_sequence->executer();
 		}
 	}
 	/*while(m_condition->executer())

@@ -205,15 +205,15 @@ Noeud* Interpreteur::instPour() {
     // <instPour>::= pour([<affectation>];<expression>;[<affectation>])
     // <seqInst>finpour
     int affecter = 0;
-    Noeud* affect1 = nullptr;
-    Noeud* affect2 = nullptr;
+    Noeud* affect1;
+    Noeud* affect2;
 
     testerEtAvancer("pour");
     testerEtAvancer("(");
 
     if (m_lecteur.getSymbole() == "<VARIABLE>") {
         //Si on a une affectation
-        Noeud* affect1 = affectation(); //c'est bien affectation() et pas expression() !
+        affect1 = affectation(); //c'est bien affectation() et pas expression() !
         testerEtAvancer(";");
         affecter = 1; //Condition vérifiée
     }
@@ -222,7 +222,7 @@ Noeud* Interpreteur::instPour() {
     if (m_lecteur.getSymbole() == ";" && affecter) {
         //Si on a un ';' ET que le pour a commencé par une affectation
         m_lecteur.avancer();
-        Noeud* affect2 = affectation();
+        affect2 = affectation();
     }
     testerEtAvancer(")");
     Noeud* sequence = seqInst();

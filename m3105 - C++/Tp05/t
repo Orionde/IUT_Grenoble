@@ -5,9 +5,11 @@ procedure principale()
   #tantque(a < 4)
   	 #a = a + 1;
   #fintantque
-  #i = 0;
-  pour(a = 0 ; a < 5 ; a = a + 1)
-    i = 9;
-  finpour
+  x = 0;
+  #pour(a = 0 ; a < 5 ; a = a + 1)
+    #i = i + 3;
+  #finpour
+  repeter x = x + 5 ;
+  jusqua(x > 10)
 finproc
 # Commentaire Final
