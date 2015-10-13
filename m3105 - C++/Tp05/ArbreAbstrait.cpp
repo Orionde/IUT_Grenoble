@@ -144,9 +144,16 @@ int NoeudInstEcrire::executer() {
     for (unsigned int i = 0; i < m_instructions.size(); i++)
     {
         if ((typeid (m_instructions[i]) == typeid (SymboleValue) && *((SymboleValue*) m_instructions[i]) == "<CHAINE>"))
-                cout << m_instructions[i] << endl;
+        {
+                cout << m_instructions[i] <<  "instr" <<endl;
+        
+        }
         else
+        {
             m_instructions[i]->executer(); // on exécute chaque instruction de la séquence
+            cout << "else" <<endl;
+        }
+        
     }
     return 0; // La valeur renvoyée ne représente rien !
 }
