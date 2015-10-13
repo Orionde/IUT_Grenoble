@@ -1,0 +1,22 @@
+ArbreAbstrait
+	Déclaration de tous les noeuds + fonctions ajouter/executer
+
+Lecteur
+	Déclaration Lecteur
+	avancer
+	sauterSeparateurs
+	motSuivant
+
+	Déclaration LecteurCaractere
+	avancer
+
+symbole
+	Déclaration symbole 
+	operator ==
+	isMotCle
+	operator << 
+
+SymboleValue
+	Déclaration
+	executer
+	operator << 

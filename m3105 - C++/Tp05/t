@@ -6,10 +6,11 @@ procedure principale()
   	 #a = a + 1;
   #fintantque
   x = 0;
-  #pour(a = 0 ; a < 5 ; a = a + 1)
-    #i = i + 3;
-  #finpour
-  repeter x = x + 5 ;
-  jusqua(x > 10)
+  pour(a = 0 ; a < 5 ; a = a + 1)
+    i = i + 3;
+  finpour;
+  ecrire(a)
+  #repeter x = x + 5 ;
+  #jusqua(x > 10)
 finproc
 # Commentaire Final

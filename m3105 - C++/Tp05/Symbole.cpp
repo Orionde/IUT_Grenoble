@@ -52,12 +52,12 @@ bool Symbole::isMotCle(const string & s) const {
 
 ostream & operator<<(ostream & cout, const Symbole & symbole) {
   cout << "Symbole de type ";
-  if (symbole.m_categorie == Symbole::MOTCLE) cout << "<MOTCLE>      ";
-  else if (symbole.m_categorie == Symbole::VARIABLE) cout << "<VARIABLE>    ";
-  else if (symbole.m_categorie == Symbole::ENTIER) cout << "<ENTIER>      ";
-  else if (symbole.m_categorie == Symbole::CHAINE) cout << "<CHAINE>      ";
-  else if (symbole.m_categorie == Symbole::INDEFINI) cout << "<INDEFINI>    ";
-  else if (symbole.m_categorie == Symbole::FINDEFICHIER) cout << "<FINDEFICHIER>";
+  if (symbole.m_categorie == Symbole::MOTCLE)               cout << "<MOTCLE>      ";
+  else if (symbole.m_categorie == Symbole::VARIABLE)        cout << "<VARIABLE>    ";
+  else if (symbole.m_categorie == Symbole::ENTIER)          cout << "<ENTIER>      ";
+  else if (symbole.m_categorie == Symbole::CHAINE)          cout << "<CHAINE>      ";
+  else if (symbole.m_categorie == Symbole::INDEFINI)        cout << "<INDEFINI>    ";
+  else if (symbole.m_categorie == Symbole::FINDEFICHIER)    cout << "<FINDEFICHIER>";
   cout << " : \"" << symbole.m_chaine << "\"";
   return cout;
 }
