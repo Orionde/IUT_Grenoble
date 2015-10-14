@@ -156,3 +156,11 @@ int NoeudInstEcrire::executer() {
 void NoeudInstEcrire::ajoute(Noeud* instruction) {
     if (instruction != nullptr) m_instructions.push_back(instruction);
 }
+
+
+NoeudInstLire::NoeudInstLire(Noeud* condition) : m_condition(condition) {
+}
+
+int NoeudInstLire::executer() {
+    m_condition->executer();
+}

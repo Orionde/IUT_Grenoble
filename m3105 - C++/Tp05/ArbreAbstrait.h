@@ -167,14 +167,15 @@ private:
 };
 
 ////////////////////////////////////////////////////////////////////////////////
-/*class NoeudInstLire : public Noeud {
-  public:
-  NoeudInstLire(Noeud* condition, Noeud* sequence);
-  ~NoeudInstLire() {}
-  int executer();
 
-  private:
-  Noeud*  m_condition;
-  Noeud*  m_sequence;
-  };*/
+class NoeudInstLire : public Noeud {
+public:
+    NoeudInstLire(Noeud* condition);
+    ~NoeudInstLire() {
+    }
+    int executer();
+
+private:
+    Noeud* m_condition;
+};
 #endif

@@ -252,13 +252,15 @@ Noeud * Interpreteur::instEcrire() {
     testerEtAvancer(")");
     return ne;
 }
-/*
-   Noeud * Interpreteur::instLire() {
-// <instLire> ::= lire (  <variable>  { ,  <variable>  } )
-testerEtAvancer("lire");
-if (m_lecteur.getSymbole() == "<VARIABLE>") {
-Noeud* condition = expression();
-testerEtAvancer(")");
+
+Noeud * Interpreteur::instLire() {
+    // <instLire> ::= lire (  <variable>  { ,  <variable>  } )
+    testerEtAvancer("lire");
+    testerEtAvancer("(");
+    Noeud* condition = expression();
+    while (m_lecteur.getSymbole() == ",") {
+        m_lecteur.avancer();
+        Noeud* condition = expression();
+    }
+    return new NoeudInstLire(condition);
 }
-return nullptr;
-}*/
