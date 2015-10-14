@@ -93,13 +93,10 @@ public:
     ~NoeudInstSi() {
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute l'instruction si : si condition vraie on exécute la séquence
-    void ajoute(Noeud* instruction);
 
 private:
     Noeud* m_condition;
     Noeud* m_sequence;
-   
-    vector<Noeud *> m_instructions;
 
 };
 

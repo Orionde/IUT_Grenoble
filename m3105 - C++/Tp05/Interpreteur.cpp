@@ -149,29 +149,24 @@ Noeud* Interpreteur::instSi() {
     Noeud* condition = expression(); // On mémorise la condition
     testerEtAvancer(")");
     Noeud* sequence = seqInst(); // On mémorise la séquence d'instruction
+    
     while (m_lecteur.getSymbole() == "sinonsi") {
         m_lecteur.avancer();
         testerEtAvancer("(");
         Noeud* condition = expression(); // On mémorise la condition
         testerEtAvancer(")");
         Noeud* sequence = seqInst(); // On mémorise la séquence d'instruction
-        if (m_lecteur.getSymbole() == "sinon") {
-            m_lecteur.avancer();
-            Noeud* sequence = seqInst();
-            testerEtAvancer("finsi");
-        } else {
-            testerEtAvancer("finsi");
-        }
+        
+        
     }
 
     if (m_lecteur.getSymbole() == "sinon") {
 
         m_lecteur.avancer();
         Noeud* sequence = seqInst();
-        testerEtAvancer("finsi");
-    } else {
-        testerEtAvancer("finsi");
+        
     }
+    testerEtAvancer("finsi");
     new NoeudInstSi(condition, sequence); // Et on renvoie un noeud Instruction Si
 }
 
