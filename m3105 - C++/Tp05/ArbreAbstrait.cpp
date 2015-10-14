@@ -15,7 +15,7 @@ NoeudSeqInst::NoeudSeqInst() : m_instructions() {
 int NoeudSeqInst::executer() {
     for (unsigned int i = 0; i < m_instructions.size(); i++)
         m_instructions[i]->executer(); // on exécute chaque instruction de la séquence
-    return 0; // La valeur renvoyée ne représente rien !
+    return 0; // La vlaeur renvoyée ne représente rien !
 }
 
 void NoeudSeqInst::ajoute(Noeud* instruction) {
@@ -104,7 +104,7 @@ NoeudInstRepeter::NoeudInstRepeter(Noeud* condition, Noeud* sequence)
 }
 
 int NoeudInstRepeter::executer() {
-    while (m_condition->executer()) m_sequence->executer();
+    while (!m_condition->executer()) m_sequence->executer();
     return 0; // La valeur renvoyée ne représente rien !
 }
 
@@ -139,27 +139,19 @@ NoeudInstEcrire::NoeudInstEcrire() {
 }
 
 int NoeudInstEcrire::executer() {
-   //if ((typeid (*p) == typeid (SymboleValue) && *((SymboleValue*) p) == "<CHAINE>")
 
-    for (unsigned int i = 0; i < m_instructions.size(); i++)
-    {
-        if ((typeid (m_instructions[i]) == typeid (SymboleValue) && *((SymboleValue*) m_instructions[i]) == "<CHAINE>"))
-        {
-                cout << m_instructions[i] <<  "instr" <<endl;
-        
+    for (unsigned int i = 0; i < m_instructions.size(); i++) {
+        if ((typeid (m_instructions[i]) == typeid (SymboleValue) && *((SymboleValue*) m_instructions[i]) == "<CHAINE>")) {
+            cout << m_instructions[i] << "instr" << endl;
+
+        } else {
+            cout << m_instructions[i]->executer(); // on exécute chaque instruction de la séquence -> récupérer valeur
         }
-        else
-        {
-            m_instructions[i]->executer(); // on exécute chaque instruction de la séquence
-            cout << "else" <<endl;
-        }
-        
+
     }
     return 0; // La valeur renvoyée ne représente rien !
 }
 
-
 void NoeudInstEcrire::ajoute(Noeud* instruction) {
     if (instruction != nullptr) m_instructions.push_back(instruction);
 }
-

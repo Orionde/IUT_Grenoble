@@ -251,7 +251,7 @@ Noeud * Interpreteur::instEcrire() {
 
             ne->ajoute(expression());
         }
-    }// || expression)
+    }
     return ne;
 }
 /*
