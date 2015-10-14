@@ -235,12 +235,15 @@ Noeud * Interpreteur::instEcrire() {
     NoeudInstEcrire * ne = new NoeudInstEcrire;
     testerEtAvancer("ecrire");
     testerEtAvancer("(");
+
     if (m_lecteur.getSymbole() == "<CHAINE>") {
         ne->ajoute(m_table.chercheAjoute(m_lecteur.getSymbole()));
         m_lecteur.avancer();
-    } else {
+        
+    }
+
+    else {
         ne->ajoute(expression());
-        m_lecteur.avancer();
     }
 
     while (m_lecteur.getSymbole() == ",") {
@@ -248,10 +251,10 @@ Noeud * Interpreteur::instEcrire() {
         if (m_lecteur.getSymbole() == "<CHAINE>") {
             ne->ajoute(m_table.chercheAjoute(m_lecteur.getSymbole()));
         } else {
-
             ne->ajoute(expression());
         }
     }
+    testerEtAvancer(")");
     return ne;
 }
 /*

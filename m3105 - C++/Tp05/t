@@ -1,18 +1,30 @@
 # Fichier de test
 # Les lignes de commentaires commencent par #
 procedure principale()
-  a = 0;
-  b = 5;
-  #tantque(a < 4)
-  	 #a = a + 1;
-  #fintantque
-  #x = 0;
- # pour(a = 0 ; a < 5 ; a = a + 1)
-  #  i = i + 3;
-  #finpour
-  #ecrire(a, b)
-  x = 0;
-  repeter x = x + 5 ;
-  jusqua(x > 10)
-finproc
+	a = 0;
+	b = 5;
+	x = 0;
+
+#tantque(a < 4)
+#a = a + 1;
+#fintantque
+
+# pour(a = 0 ; a < 5 ; a = a + 1)
+#  i = i + 3;
+#finpour
+si(a < b)
+	a = 7;
+sinonsi(a > b)
+	b = 9;
+sinonsi(a == b)
+	x = 5;
+sinon
+	x = 3;
+finsi
+
+ecrire(a, b)
+
+#repeter x = x + 5 ;
+#jusqua(x > 10)
+	finproc
 # Commentaire Final

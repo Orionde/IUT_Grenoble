@@ -141,11 +141,12 @@ NoeudInstEcrire::NoeudInstEcrire() {
 int NoeudInstEcrire::executer() {
 
     for (unsigned int i = 0; i < m_instructions.size(); i++) {
-        if ((typeid (m_instructions[i]) == typeid (SymboleValue) && *((SymboleValue*) m_instructions[i]) == "<CHAINE>")) {
-            cout << m_instructions[i] << "instr" << endl;
+        if ((typeid (*m_instructions[i]) == typeid (SymboleValue) && *((SymboleValue*) m_instructions[i]) == "<CHAINE>")) {
+            string s = ((SymboleValue*)m_instructions[i])-> getChaine();
+            cout << s.substr(1,s.size() - 2);
 
         } else {
-            cout << m_instructions[i]->executer(); // on exécute chaque instruction de la séquence -> récupérer valeur
+            cout << m_instructions[i]->executer(); // On exécute chaque instruction de la séquence -> récupérer valeur
         }
 
     }
