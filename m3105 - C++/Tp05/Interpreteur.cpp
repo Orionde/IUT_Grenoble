@@ -14,27 +14,19 @@ void Interpreteur::analyse() {
 
 void Interpreteur::tester(const string & symboleAttendu) const throw (SyntaxeException) {
     // Teste si le symbole courant est égal au symboleAttendu... Si non, lève une exception
-    
     static char messageWhat[256];
-    try{
     if (m_lecteur.getSymbole() != symboleAttendu) {
-            sprintf(messageWhat,
-                    "Ligne %d, Colonne %d - Erreur de syntaxe - Symbole attendu : %s - Symbole trouvé : %s",
-                    m_lecteur.getLigne(), m_lecteur.getColonne(),
-                    symboleAttendu.c_str(), m_lecteur.getSymbole().getChaine().c_str());
-            throw SyntaxeException(messageWhat);
-        }
+        sprintf(messageWhat,
+                "Ligne %d, Colonne %d - Erreur de syntaxe - Symbole attendu : %s - Symbole trouvé : %s",
+                m_lecteur.getLigne(), m_lecteur.getColonne(),
+                symboleAttendu.c_str(), m_lecteur.getSymbole().getChaine().c_str());
+        throw SyntaxeException(messageWhat);
     }
-    catch (SyntaxeException *e) {}
 }
 
 void Interpreteur::testerEtAvancer(const string & symboleAttendu) throw (SyntaxeException) {
     // Teste si le symbole courant est égal au symboleAttendu... Si oui, avance, Sinon, lève une exception
-    try{
-        tester(symboleAttendu);
-    } 
-    catch (SyntaxeException *e) {}
-    
+    tester(symboleAttendu);
     m_lecteur.avancer();
 }
 
@@ -42,7 +34,6 @@ void Interpreteur::erreur(const string & message) const throw (SyntaxeException)
     // Lève une exception contenant le message et le symbole courant trouvé
     // Utilisé lorsqu'il y a plusieurs symboles attendus possibles...
     static char messageWhat[256];
-    cout << "p";
     sprintf(messageWhat,
             "Ligne %d, Colonne %d - Erreur de syntaxe - %s - Symbole trouvé : %s",
             m_lecteur.getLigne(), m_lecteur.getColonne(), message.c_str(), m_lecteur.getSymbole().getChaine().c_str());
@@ -77,34 +68,27 @@ Noeud* Interpreteur::seqInst() {
 
 Noeud* Interpreteur::inst() {
     // <inst> ::= <affectation> ; | <instSi> | <instTantQue> | <instRepeter> ; | <instPour> | <instEcrire> ; | <instLire> ;
-  
-    try{
-        if (m_lecteur.getSymbole() == "<VARIABLE>") {
-            Noeud *affect = affectation();
-            testerEtAvancer(";");
-            return affect;
-        } else if (m_lecteur.getSymbole() == "si")
-            return instSi();
-        else if (m_lecteur.getSymbole() == "tantque")
-            return instTantQue();
-        else if (m_lecteur.getSymbole() == "repeter") {
-            //testerEtAvancer(";");
-            return instRepeter();
-        } else if (m_lecteur.getSymbole() == "pour") {
-            //testerEtAvancer(";");
-            return instPour();
-        } else if (m_lecteur.getSymbole() == "ecrire") {
-            //testerEtAvancer(";");
-            return instEcrire();
-        } else if (m_lecteur.getSymbole() == "lire") {
+    if (m_lecteur.getSymbole() == "<VARIABLE>") {
+        Noeud *affect = affectation();
+        testerEtAvancer(";");
+        return affect;
+    } else if (m_lecteur.getSymbole() == "si")
+        return instSi();
+    else if (m_lecteur.getSymbole() == "tantque")
+        return instTantQue();
+    else if (m_lecteur.getSymbole() == "repeter") {
+        //testerEtAvancer(";");
+        return instRepeter();
+    } else if (m_lecteur.getSymbole() == "pour") {
+        //testerEtAvancer(";");
+        return instPour();
+    } else if (m_lecteur.getSymbole() == "ecrire") {
+        //testerEtAvancer(";");
+        return instEcrire();
+    }/* else if (m_lecteur.getSymbole() == "lire") {
 	  testerEtAvancer(";");
 	  return instLire();
-	  }  else erreur("Instruction incorrecte");
-    } 
-    catch (SyntaxeException *e) {
-        cout << "0";
-    }
-
+	  } */ else erreur("Instruction incorrecte");
 }
 
 Noeud* Interpreteur::affectation() {
@@ -165,22 +149,22 @@ Noeud* Interpreteur::instSi() {
     Noeud* condition = expression(); // On mémorise la condition
     testerEtAvancer(")");
     Noeud* sequence = seqInst(); // On mémorise la séquence d'instruction
-
+    
     while (m_lecteur.getSymbole() == "sinonsi") {
         m_lecteur.avancer();
         testerEtAvancer("(");
         Noeud* condition = expression(); // On mémorise la condition
         testerEtAvancer(")");
         Noeud* sequence = seqInst(); // On mémorise la séquence d'instruction
-
-
+        
+        
     }
 
     if (m_lecteur.getSymbole() == "sinon") {
 
         m_lecteur.avancer();
         Noeud* sequence = seqInst();
-
+        
     }
     testerEtAvancer("finsi");
     new NoeudInstSi(condition, sequence); // Et on renvoie un noeud Instruction Si
@@ -189,20 +173,13 @@ Noeud* Interpreteur::instSi() {
 Noeud* Interpreteur::instTantQue() {
 
     //<instTantQue>  ::= tantque (  <expression>  )  <seqInst>  fintantque
-    Noeud* condition;
-    Noeud* sequence;
-
-
 
     testerEtAvancer("tantque");
     testerEtAvancer("(");
-    condition = expression();
-
+    Noeud* condition = expression();
     testerEtAvancer(")");
-    sequence = seqInst();
-
+    Noeud* sequence = seqInst();
     testerEtAvancer("fintantque");
-
     return new NoeudInstTantQue(condition, sequence);
 }
 
@@ -257,8 +234,10 @@ Noeud * Interpreteur::instEcrire() {
     if (m_lecteur.getSymbole() == "<CHAINE>") {
         ne->ajoute(m_table.chercheAjoute(m_lecteur.getSymbole()));
         m_lecteur.avancer();
+        
+    }
 
-    } else {
+    else {
         ne->ajoute(expression());
     }
 
@@ -284,4 +263,15 @@ Noeud * Interpreteur::instLire() {
         Noeud* condition = expression();
     }
     return new NoeudInstLire(condition);
+}
+
+
+void  Interpreteur::traduitEnCPP( ostream  &  cout , unsigned int  indentation ) const {
+    cout  <<  setw ( 4 * indentation ) << "" << "int main() {" <<  endl ;  // Début d’un programme C++
+    // Ecrire en C++ la déclaration des variables présentes dans le programme...  
+    // ... variables dont on retrouvera le nom en parcourant la table des symboles !  
+    // Par exemple, si le programme contient i,j,k, il  faudra écrire : int i; int j; int k; ... 
+    this->getArbre()->traduitEnCPP( cout , indentation + 1 ); // lance l'opération traduitEnCPP sur la racine
+    cout  <<  setw ( 4 *( indentation + 1 )) << "" << "return 0;" <<  endl ; 
+    cout  <<  setw ( 4 * indentation ) << "}"  <<  endl  ;  // Fin d’un programme C++
 }

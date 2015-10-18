@@ -40,6 +40,7 @@ public:
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute chaque instruction de la séquence
     void ajoute(Noeud* instruction); // Ajoute une instruction à la séquence
+   
 
 private:
     vector<Noeud *> m_instructions; // pour stocker les instructions de la séquence
@@ -56,6 +57,8 @@ public:
     ~NoeudAffectation() {
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute (évalue) l'expression et affecte sa valeur à la variable
+    void traduitEnCPP(ostream & cout, unsigned int indentation);
+    
 
 private:
     Noeud* m_variable;
@@ -74,6 +77,7 @@ public:
     ~NoeudOperateurBinaire() {
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute (évalue) l'opération binaire)
+    
 
 private:
     Symbole m_operateur;
@@ -93,6 +97,8 @@ public:
     ~NoeudInstSi() {
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute l'instruction si : si condition vraie on exécute la séquence
+    void traduitEnCPP(ostream & cout, unsigned int indentation) const;
+    
 
 private:
     Noeud* m_condition;
@@ -110,6 +116,7 @@ public:
     ~NoeudInstTantQue() {
     }
     int executer();
+    void traduitEnCPP(ostream & cout, unsigned int indentation);
 
 private:
     Noeud* m_condition;
@@ -125,6 +132,7 @@ public:
     ~NoeudInstRepeter() {
     }
     int executer();
+    void traduitEnCPP(ostream & cout, unsigned int indentation);
 
 private:
     Noeud* m_condition;
@@ -140,6 +148,7 @@ public:
     ~NoeudInstPour() {
     }
     int executer();
+    void traduitEnCPP(ostream & cout, unsigned int indentation);
 
 private:
     Noeud* m_condition;
@@ -161,6 +170,7 @@ public:
     }
     int executer();
     void ajoute(Noeud* instruction);
+    void traduitEnCPP(ostream & cout, unsigned int indentation);
 private:
     vector<Noeud *> m_instructions;
 
@@ -174,6 +184,7 @@ public:
     ~NoeudInstLire() {
     }
     int executer();
+    void traduitEnCPP(ostream & cout, unsigned int indentation);
 
 private:
     Noeud* m_condition;
