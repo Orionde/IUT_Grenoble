@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
   } else
     nomFich = argv[1];
   ifstream fichier(nomFich.c_str());
-  try {
+  /*try {
     Interpreteur interpreteur(fichier);
     interpreteur.analyse();
     // Si pas d'exception levée, l'analyse syntaxique a réussi
@@ -26,6 +26,8 @@ int main(int argc, char* argv[]) {
     cout << endl << "================ Table des symboles apres exécution : " << interpreteur.getTable();
   } catch (InterpreteurException & e) {
     cout << e.what() << endl;
-  }
+  }*/
+  Interpreteur interpreteur(fichier);
+  interpreteur.traduitEnCPP(cout, 4);
   return 0;
 }

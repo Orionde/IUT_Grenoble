@@ -23,7 +23,7 @@ public:
     virtual void ajoute(Noeud* instruction) {
         throw OperationInterditeException();
     }
-
+    virtual void traduitEnCPP(ostream & cout, unsigned int indentation){}   
     virtual ~Noeud() {
     } // Présence d'un destructeur virtuel conseillée dans les classes abstraites
 };
@@ -40,7 +40,8 @@ public:
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute chaque instruction de la séquence
     void ajoute(Noeud* instruction); // Ajoute une instruction à la séquence
-   
+    void traduitEnCPP(ostream & cout, unsigned int indentation) const;
+
 
 private:
     vector<Noeud *> m_instructions; // pour stocker les instructions de la séquence
@@ -57,8 +58,8 @@ public:
     ~NoeudAffectation() {
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute (évalue) l'expression et affecte sa valeur à la variable
-    void traduitEnCPP(ostream & cout, unsigned int indentation);
-    
+    void traduitEnCPP(ostream & cout, unsigned int indentation) const;
+
 
 private:
     Noeud* m_variable;
@@ -77,7 +78,7 @@ public:
     ~NoeudOperateurBinaire() {
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute (évalue) l'opération binaire)
-    
+    void traduitEnCPP(ostream & cout, unsigned int indentation)const;
 
 private:
     Symbole m_operateur;
@@ -98,7 +99,7 @@ public:
     } // A cause du destructeur virtuel de la classe Noeud
     int executer(); // Exécute l'instruction si : si condition vraie on exécute la séquence
     void traduitEnCPP(ostream & cout, unsigned int indentation) const;
-    
+
 
 private:
     Noeud* m_condition;
@@ -116,7 +117,7 @@ public:
     ~NoeudInstTantQue() {
     }
     int executer();
-    void traduitEnCPP(ostream & cout, unsigned int indentation);
+    void traduitEnCPP(ostream & cout, unsigned int indentation) const;
 
 private:
     Noeud* m_condition;
@@ -132,7 +133,7 @@ public:
     ~NoeudInstRepeter() {
     }
     int executer();
-    void traduitEnCPP(ostream & cout, unsigned int indentation);
+    void traduitEnCPP(ostream & cout, unsigned int indentation) const;
 
 private:
     Noeud* m_condition;
@@ -148,7 +149,7 @@ public:
     ~NoeudInstPour() {
     }
     int executer();
-    void traduitEnCPP(ostream & cout, unsigned int indentation);
+    void traduitEnCPP(ostream & cout, unsigned int indentation) const;
 
 private:
     Noeud* m_condition;
@@ -170,7 +171,7 @@ public:
     }
     int executer();
     void ajoute(Noeud* instruction);
-    void traduitEnCPP(ostream & cout, unsigned int indentation);
+    void traduitEnCPP(ostream & cout, unsigned int indentation) const;
 private:
     vector<Noeud *> m_instructions;
 
@@ -181,10 +182,11 @@ private:
 class NoeudInstLire : public Noeud {
 public:
     NoeudInstLire(Noeud* condition);
+
     ~NoeudInstLire() {
     }
     int executer();
-    void traduitEnCPP(ostream & cout, unsigned int indentation);
+    void traduitEnCPP(ostream & cout, unsigned int indentation)const ;
 
 private:
     Noeud* m_condition;
