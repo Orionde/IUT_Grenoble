@@ -23,7 +23,11 @@ public:
     virtual void ajoute(Noeud* instruction) {
         throw OperationInterditeException();
     }
+<<<<<<< HEAD
     virtual void traduitEnCPP(ostream & cout, unsigned int indentation)const = 0;
+=======
+    virtual void traduitEnCPP(ostream & cout, unsigned int indentation){}   
+>>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
     virtual ~Noeud() {
     } // Présence d'un destructeur virtuel conseillée dans les classes abstraites
 };
@@ -41,7 +45,11 @@ public:
     int executer(); // Exécute chaque instruction de la séquence
     void ajoute(Noeud* instruction); // Ajoute une instruction à la séquence
     void traduitEnCPP(ostream & cout, unsigned int indentation) const;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
 
 private:
     vector<Noeud *> m_instructions; // pour stocker les instructions de la séquence
@@ -181,7 +189,11 @@ private:
 
 class NoeudInstLire : public Noeud {
 public:
+<<<<<<< HEAD
     NoeudInstLire();
+=======
+    NoeudInstLire(Noeud* condition);
+>>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
 
     ~NoeudInstLire() {
     }
