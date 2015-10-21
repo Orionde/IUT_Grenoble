@@ -259,14 +259,15 @@ Noeud * Interpreteur::instEcrire() {
 
 Noeud * Interpreteur::instLire() {
     // <instLire> ::= lire (  <variable>  { ,  <variable>  } )
+    NoeudInstLire * ne = new NoeudInstLire;
     testerEtAvancer("lire");
     testerEtAvancer("(");
-    Noeud* condition = expression();
+    ne->ajoute(expression());
     while (m_lecteur.getSymbole() == ",") {
         m_lecteur.avancer();
-        Noeud* condition = expression();
+        ne->ajoute(expression());
     }
-    return new NoeudInstLire(condition);
+    return new NoeudInstLire();
 }
 
 void Interpreteur::traduitEnCPP(ostream & cout, unsigned int indentation) const {

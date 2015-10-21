@@ -23,7 +23,7 @@ public:
     virtual void ajoute(Noeud* instruction) {
         throw OperationInterditeException();
     }
-    virtual void traduitEnCPP(ostream & cout, unsigned int indentation)const = 0;
+    virtual void traduitEnCPP(ostream & cout, unsigned int indentation)const{};
     virtual ~Noeud() {
     } // Présence d'un destructeur virtuel conseillée dans les classes abstraites
 };
@@ -186,6 +186,7 @@ public:
     ~NoeudInstLire() {
     }
     int executer();
+    void ajoute(Noeud * instruction);
     void traduitEnCPP(ostream & cout, unsigned int indentation)const ;
 
 private:

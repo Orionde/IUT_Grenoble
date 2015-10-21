@@ -27,6 +27,7 @@ public:
     } // accesseur
 
     friend ostream & operator<<(ostream & cout, const SymboleValue & symbole); // affiche un symbole value sur cout
+    void traduitEnCPP(ostream & cout, unsigned int indentation)const;
 
 private:
     bool m_defini; // indique si la valeur du symbole est définie
