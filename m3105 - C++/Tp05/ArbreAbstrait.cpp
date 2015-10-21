@@ -44,12 +44,13 @@ int NoeudAffectation::executer() {
 
 void NoeudAffectation::traduitEnCPP(ostream & cout, unsigned int indentation) const {
     cout << setw(4 * indentation) << "";
-    cout << ((SymboleValue*) m_variable) << "=";
-    if (typeid (*m_expression) == typeid (SymboleValue)) {
-        cout << m_expression->executer();
-        m_expression->traduitEnCPP(cout, 0);
-    } else
-        m_expression->traduitEnCPP(cout, 0);
+    
+    ((SymboleValue*) m_variable)->traduitEnCPP(cout, 0); 
+    
+    cout << " = ";
+    
+    m_expression->traduitEnCPP(cout, 0);
+    
     cout << endl;
 }
 
