@@ -12,7 +12,6 @@ procedure principale()
 # pour(a = 0 ; a < 5 ; a = a + 1)
 #  i = i + 3;
 #finpour
-<<<<<<< HEAD
 #si(a < b)
 	#a = 7;
 #sinonsi(a > b)
@@ -22,19 +21,8 @@ procedure principale()
 #sinon
 #	x = 3;
 #finsi
-=======
-si(a < b)
-	a = 7;
-sinonsi(a > b)
-	b = 9;
-sinonsi(a == b)
-	x = 5;
-sinon
-	x = 3;
-finsi
->>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
 
-ecrire(a, b)
+#ecrire(a, b)
 
 #repeter x = x + 5 ;
 #jusqua(x > 10)

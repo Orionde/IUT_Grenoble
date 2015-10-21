@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
   } else
     nomFich = argv[1];
   ifstream fichier(nomFich.c_str());
-  /*try {
+  try {
     Interpreteur interpreteur(fichier);
     interpreteur.analyse();
     if(interpreteur.isErreur())
@@ -33,11 +33,7 @@ int main(int argc, char* argv[]) {
     
   }catch (InterpreteurException & e) {
     cout << e.what() << endl;
-<<<<<<< HEAD
   }
-=======
-  }*/
->>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
   Interpreteur interpreteur(fichier);
   interpreteur.traduitEnCPP(cout, 4);
   return 0;

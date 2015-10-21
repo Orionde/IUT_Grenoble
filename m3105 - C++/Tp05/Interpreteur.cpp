@@ -26,15 +26,11 @@ void Interpreteur::tester(const string & symboleAttendu) const throw (SyntaxeExc
 
 void Interpreteur::testerEtAvancer(const string & symboleAttendu) throw (SyntaxeException) {
     // Teste si le symbole courant est égal au symboleAttendu... Si oui, avance, Sinon, lève une exception
-<<<<<<< HEAD
     try
     {tester(symboleAttendu);
     }catch (SyntaxeException & e){
         m_exceptions.push_back(e);
     }
-=======
-    tester(symboleAttendu);
->>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
     m_lecteur.avancer();
 }
 
@@ -80,7 +76,6 @@ Noeud* Interpreteur::inst() {
         Noeud *affect = affectation();
         testerEtAvancer(";");
         return affect;
-<<<<<<< HEAD
     } else if (m_lecteur.getSymbole() == "si") {
 
         return instSi();
@@ -99,25 +94,6 @@ Noeud* Interpreteur::inst() {
         testerEtAvancer(";");
         return instLire();
     } else erreur("Instruction incorrecte");
-=======
-    } else if (m_lecteur.getSymbole() == "si")
-        return instSi();
-    else if (m_lecteur.getSymbole() == "tantque")
-        return instTantQue();
-    else if (m_lecteur.getSymbole() == "repeter") {
-        //testerEtAvancer(";");
-        return instRepeter();
-    } else if (m_lecteur.getSymbole() == "pour") {
-        //testerEtAvancer(";");
-        return instPour();
-    } else if (m_lecteur.getSymbole() == "ecrire") {
-        //testerEtAvancer(";");
-        return instEcrire();
-    }/* else if (m_lecteur.getSymbole() == "lire") {
-	  testerEtAvancer(";");
-	  return instLire();
-	  } */ else erreur("Instruction incorrecte");
->>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
 }
 
 Noeud* Interpreteur::affectation() {
@@ -178,22 +154,22 @@ Noeud* Interpreteur::instSi() {
     Noeud* condition = expression(); // On mémorise la condition
     testerEtAvancer(")");
     Noeud* sequence = seqInst(); // On mémorise la séquence d'instruction
-    
+
     while (m_lecteur.getSymbole() == "sinonsi") {
         m_lecteur.avancer();
         testerEtAvancer("(");
         Noeud* condition = expression(); // On mémorise la condition
         testerEtAvancer(")");
         Noeud* sequence = seqInst(); // On mémorise la séquence d'instruction
-        
-        
+
+
     }
 
     if (m_lecteur.getSymbole() == "sinon") {
 
         m_lecteur.avancer();
         Noeud* sequence = seqInst();
-        
+
     }
     testerEtAvancer("finsi");
     new NoeudInstSi(condition, sequence); // Et on renvoie un noeud Instruction Si
@@ -263,13 +239,8 @@ Noeud * Interpreteur::instEcrire() {
     if (m_lecteur.getSymbole() == "<CHAINE>") {
         ne->ajoute(m_table.chercheAjoute(m_lecteur.getSymbole()));
         m_lecteur.avancer();
-        
-    }
 
-<<<<<<< HEAD
     }
-=======
->>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
     else {
         ne->ajoute(expression());
     }
@@ -298,7 +269,6 @@ Noeud * Interpreteur::instLire() {
     return new NoeudInstLire(condition);
 }
 
-<<<<<<< HEAD
 void Interpreteur::traduitEnCPP(ostream & cout, unsigned int indentation) const {
     cout << setw(4 * indentation) << "" << "int main() {" << endl; // Début d’un programme C++
     // Ecrire en C++ la déclaration des variables présentes dans le programme...  
@@ -319,16 +289,3 @@ void Interpreteur::traduitEnCPP(ostream & cout, unsigned int indentation) const 
         for(auto e : m_exceptions)
             cout << e.what() << endl;
     }
-=======
-
-void  Interpreteur::traduitEnCPP( ostream  &  cout , unsigned int  indentation ) const {
-    cout  <<  setw ( 4 * indentation ) << "" << "int main() {" <<  endl ;  // Début d’un programme C++
-    // Ecrire en C++ la déclaration des variables présentes dans le programme...  
-    // ... variables dont on retrouvera le nom en parcourant la table des symboles !  
-    // Par exemple, si le programme contient i,j,k, il  faudra écrire : int i; int j; int k; ... 
-    
-    getArbre()->traduitEnCPP( cout , indentation + 1 ); // lance l'opération traduitEnCPP sur la racine
-    cout  <<  setw ( 4 *( indentation + 1 )) << "" << "return 0;" <<  endl ; 
-    cout  <<  setw ( 4 * indentation ) << "}"  <<  endl  ;  // Fin d’un programme C++
-}
->>>>>>> e5dbfe7edc638e2043353c4510eab1223be1be6c
