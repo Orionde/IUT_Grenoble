@@ -27,8 +27,11 @@ void Interpreteur::tester(const string & symboleAttendu) const throw (SyntaxeExc
 void Interpreteur::testerEtAvancer(const string & symboleAttendu) throw (SyntaxeException) {
     // Teste si le symbole courant est égal au symboleAttendu... Si oui, avance, Sinon, lève une exception
     try
-    {tester(symboleAttendu);
-    }catch (SyntaxeException & e){
+    {
+        tester(symboleAttendu);
+    }
+    catch (SyntaxeException & e)
+    {
         m_exceptions.push_back(e);
     }
     m_lecteur.avancer();
