@@ -19,12 +19,16 @@ public:
 
 	inline const TableSymboles & getTable () const  { return m_table;    } // accesseur	
 	inline Noeud* getArbre () const { return m_arbre; }                    // accesseur
-	
+        void traduitEnCPP(ostream  &  cout , unsigned int  indentation ) const;
+	bool isErreur();
+        void printErr(ostream & cout);
+        
 private:
     Lecteur        m_lecteur;  // Le lecteur de symboles utilisé pour analyser le fichier
     TableSymboles  m_table;    // La table des symboles valués
     Noeud*         m_arbre;    // L'arbre abstrait
-
+    vector<SyntaxeException> m_exceptions;
+    
     // Implémentation de la grammaire
     Noeud*  programme();   //   <programme> ::= procedure principale() <seqInst> finproc FIN_FICHIER
     Noeud*  seqInst();	   //     <seqInst> ::= <inst> { <inst> }
@@ -40,6 +44,8 @@ private:
     
     Noeud* instEcrire(); // <instEcrire> ::= ecrire ( <expression> | <chaine> { , <expression> | <chaine> } )
     Noeud* instLire(); // <instLire> ::= lire (  <variable>  { ,  <variable>  } )
+    
+    
     
     // outils pour simplifier l'analyse syntaxique
     void tester (const string & symboleAttendu) const throw (SyntaxeException);   // Si symbole courant != symboleAttendu, on lève une exception

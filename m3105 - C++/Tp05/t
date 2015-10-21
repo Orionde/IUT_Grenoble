@@ -5,15 +5,15 @@ procedure principale()
 	b = 5;
 	x = 0;
 
-#tantque((a < 4)
+#tantque(a < 4)
 #a = a + 1;
 #fintantque
-er/o
+
 # pour(a = 0 ; a < 5 ; a = a + 1)
 #  i = i + 3;
 #finpour
 #si(a < b)
-#	a = 7;
+	#a = 7;
 #sinonsi(a > b)
 #	b = 9;
 #sinonsi(a == b)
