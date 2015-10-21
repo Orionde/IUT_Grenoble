@@ -26,9 +26,9 @@ void Interpreteur::tester(const string & symboleAttendu) const throw (SyntaxeExc
 
 void Interpreteur::testerEtAvancer(const string & symboleAttendu) throw (SyntaxeException) {
     // Teste si le symbole courant est égal au symboleAttendu... Si oui, avance, Sinon, lève une exception
-    try
-    {tester(symboleAttendu);
-    }catch (SyntaxeException & e){
+    try {
+        tester(symboleAttendu);
+    } catch (SyntaxeException & e) {
         m_exceptions.push_back(e);
     }
     m_lecteur.avancer();
@@ -240,8 +240,7 @@ Noeud * Interpreteur::instEcrire() {
         ne->ajoute(m_table.chercheAjoute(m_lecteur.getSymbole()));
         m_lecteur.avancer();
 
-    }
-    else {
+    } else {
         ne->ajoute(expression());
     }
 
@@ -281,12 +280,11 @@ void Interpreteur::traduitEnCPP(ostream & cout, unsigned int indentation) const 
     cout << setw(4 * indentation) << "}" << endl; // Fin d’un programme C++
 }
 
-    bool Interpreteur::isErreur()
-    {
-        return m_exceptions.empty();
-    }
-    void Interpreteur::printErr(ostream & cout)
-    {
-        for(auto e : m_exceptions)
-            cout << e.what() << endl;
-    }
+bool Interpreteur::isErreur() {
+    return m_exceptions.empty();
+}
+
+void Interpreteur::printErr(ostream & cout) {
+    for (auto e : m_exceptions)
+        cout << e.what() << endl;
+}
