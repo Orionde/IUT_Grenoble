@@ -82,18 +82,24 @@ Noeud* Interpreteur::inst() {
     } else if (m_lecteur.getSymbole() == "tantque") {
         return instTantQue();
     } else if (m_lecteur.getSymbole() == "repeter") {
-        testerEtAvancer(";");
-        return instRepeter();
+        Noeud *repet = instRepeter();
+        return repet;
+
+
     } else if (m_lecteur.getSymbole() == "pour") {
 
         return instPour();
     } else if (m_lecteur.getSymbole() == "ecrire") {
+        Noeud *ecrit = instEcrire();
         testerEtAvancer(";");
-        return instEcrire();
-    } else if (m_lecteur.getSymbole() == "lire") {
+        return ecrit;
+    }  else if (m_lecteur.getSymbole() == "lire") {
+        Noeud *lire = instLire();
+            cout << m_lecteur.getSymbole().getChaine();
         testerEtAvancer(";");
-        return instLire();
+        return lire;
     } else erreur("Instruction incorrecte");
+
 }
 
 Noeud* Interpreteur::affectation() {
@@ -119,7 +125,7 @@ Noeud* Interpreteur::expression() {
         Symbole operateur = m_lecteur.getSymbole(); // On mémorise le symbole de l'opérateur
         m_lecteur.avancer();
         Noeud* factDroit = facteur(); // On mémorise l'opérande droit
-        fact = new NoeudOperateurBinaire(operateur, fact, factDroit); // Et on construuit un noeud opérateur binaire
+        fact = new NoeudOperateurBinaire(operateur, fact, factDroit); // Et on construit un noeud opérateur binaire
     }
     return fact; // On renvoie fact qui pointe sur la racine de l'expression
 }
@@ -267,19 +273,37 @@ Noeud * Interpreteur::instLire() {
     while (m_lecteur.getSymbole() == ",") {
         m_lecteur.avancer();
         ne->ajoute(expression());
+
     }
+    m_lecteur.avancer();
+        //cout << m_lecteur.getSymbole().getChaine() << "p";
     return new NoeudInstLire();
 }
 
 void Interpreteur::traduitEnCPP(ostream & cout, unsigned int indentation) const {
-    cout << setw(4 * indentation) << "" << "int main() {" << endl; // Début d’un programme C++
+    cout << "#include <iostream>" << endl;
+    cout << "using namespace std;" << endl;
+    cout << endl;
+    cout << "int main() {" << endl;
+    // Début d’un programme C++
     // Ecrire en C++ la déclaration des variables présentes dans le programme...  
     // ... variables dont on retrouvera le nom en parcourant la table des symboles !  
     // Par exemple, si le programme contient i,j,k, il  faudra écrire : int i; int j; int k; ... 
+    for (unsigned int i; i < m_table.getTaille(); i++) {
 
-    getArbre()->traduitEnCPP(cout, indentation + 1); // lance l'opération traduitEnCPP sur la racine
-    cout << setw(4 * (indentation + 1)) << "" << "return 0;" << endl;
-    cout << setw(4 * indentation) << "}" << endl; // Fin d’un programme C++
+        if (m_table[i] == "<VARIABLE>") {
+            cout << setw(4 * indentation) << "" << "int ";
+            m_table[i].traduitEnCPP(cout, 0);
+            cout << ";" << endl;
+        }
+    }
+
+
+
+    cout << endl;
+    getArbre()->traduitEnCPP(cout, indentation); // lance l'opération traduitEnCPP sur la racine
+    cout << setw(4 * (indentation)) << "" << "return 0;" << endl;
+    cout << "}" << endl; // Fin d’un programme C++
 }
 
 bool Interpreteur::isErreur() {

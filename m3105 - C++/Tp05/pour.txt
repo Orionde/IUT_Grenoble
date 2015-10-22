@@ -1,0 +1,6 @@
+procedure principale()
+	a = 0 ;
+	pour(i = 0 ; i < 5 ; i = i + 1)
+		a = a + 2;
+	finpour
+finproc

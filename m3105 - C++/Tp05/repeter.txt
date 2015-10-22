@@ -1,7 +1,5 @@
 procedure principale()
-	test1 = 0 ;
-	repeter
-	test1 = test1+1;
-jusqua (test1<5)
-	ecrire ("test1 = ", test1)
-	finproc
+	a = 0 ;
+	repeter a = a + 1;
+	jusqua (a < 5)
+finproc

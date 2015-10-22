@@ -60,7 +60,6 @@ public:
     int executer(); // Exécute (évalue) l'expression et affecte sa valeur à la variable
     void traduitEnCPP(ostream & cout, unsigned int indentation) const;
 
-
 private:
     Noeud* m_variable;
     Noeud* m_expression;

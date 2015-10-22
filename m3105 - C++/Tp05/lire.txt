@@ -1,0 +1,5 @@
+#test Lire
+procedure principale()
+	a = 6;
+	lire(a);
+finproc

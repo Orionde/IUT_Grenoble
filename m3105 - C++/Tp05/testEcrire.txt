@@ -1,0 +1,4 @@
+procedure principale()
+	a = 0;
+	ecrire(a);
+finproc
