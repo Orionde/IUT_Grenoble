@@ -44,13 +44,13 @@ int NoeudAffectation::executer() {
 
 void NoeudAffectation::traduitEnCPP(ostream & cout, unsigned int indentation) const {
     cout << setw(4 * indentation) << "";
-    
-    ((SymboleValue*) m_variable)->traduitEnCPP(cout, 0); 
-    
+
+    ((SymboleValue*) m_variable)->traduitEnCPP(cout, 0);
+
     cout << " = ";
-    
+
     m_expression->traduitEnCPP(cout, 0);
-    
+
     cout << endl;
 }
 
@@ -98,7 +98,7 @@ void NoeudOperateurBinaire::traduitEnCPP(ostream & cout, unsigned int indentatio
     else if (this->m_operateur == "non")
         cout << " !";
     else {
-        cout << ((Symbole) this->m_operateur).getChaine();
+        cout << ((Symbole) this->m_operateur).getChaine() << " ";
     }
 
 
@@ -164,7 +164,9 @@ NoeudInstRepeter::NoeudInstRepeter(Noeud* condition, Noeud * sequence)
 }
 
 int NoeudInstRepeter::executer() {
-    while (!m_condition->executer()) m_sequence->executer();
+    do {
+        m_sequence->executer();
+    }while (m_condition->executer());
 
     return 0; // La valeur renvoyée ne représente rien !
 }

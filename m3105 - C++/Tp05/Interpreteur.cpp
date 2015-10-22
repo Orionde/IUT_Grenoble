@@ -192,12 +192,14 @@ Noeud* Interpreteur::instRepeter() {
     //<instRepeter> ::= repeter <seqInst> jusquexpressiona( <expression>)
 
     testerEtAvancer("repeter");
-    Noeud* sequence = seqInst();
+
+    Noeud* sequence = seqInst(); // On mémorise la séquence d'instruction
+
     testerEtAvancer("jusqua");
     testerEtAvancer("(");
-    Noeud* condition = expression();
+    Noeud* condition = expression(); // O
     testerEtAvancer(")");
-    return new NoeudInstRepeter(condition, sequence);
+    return new NoeudInstRepeter(condition, sequence); // Et on renvoie un noeud Instruction Si
 
 
 }

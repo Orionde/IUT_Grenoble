@@ -1,0 +1,7 @@
+procedure principale()
+	test1 = 0 ;
+	repeter
+	test1 = test1+1;
+jusqua (test1<5)
+	ecrire ("test1 = ", test1)
+	finproc

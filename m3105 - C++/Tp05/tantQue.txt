@@ -1,0 +1,7 @@
+#test du tantQue
+procedure principale()
+a = 5;
+tantque(a < 4)
+	a = a + 1;
+fintantque
+finproc
