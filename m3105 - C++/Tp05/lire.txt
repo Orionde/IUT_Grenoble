@@ -1,5 +1,6 @@
 #test Lire
 procedure principale()
 	a = 6;
-	lire(a);
+	b = 2;
+	lire(a, b, c, d, e, f, g, h);
 finproc

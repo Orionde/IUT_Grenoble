@@ -95,7 +95,6 @@ Noeud* Interpreteur::inst() {
         return ecrit;
     }  else if (m_lecteur.getSymbole() == "lire") {
         Noeud *lire = instLire();
-            cout << m_lecteur.getSymbole().getChaine();
         testerEtAvancer(";");
         return lire;
     } else erreur("Instruction incorrecte");
@@ -206,8 +205,6 @@ Noeud* Interpreteur::instRepeter() {
     Noeud* condition = expression(); // O
     testerEtAvancer(")");
     return new NoeudInstRepeter(condition, sequence); // Et on renvoie un noeud Instruction Si
-
-
 }
 
 Noeud* Interpreteur::instPour() {
@@ -237,6 +234,8 @@ Noeud* Interpreteur::instPour() {
     testerEtAvancer("finpour");
     return new NoeudInstPour(condition, sequence, affect1, affect2);
 }
+
+////////////////////////////////////////////////////////////////////////////////
 
 Noeud * Interpreteur::instEcrire() {
     // <instEcrire> ::= ecrire ( <expression> | <chaine> { , <expression> | <chaine> } )
@@ -276,8 +275,7 @@ Noeud * Interpreteur::instLire() {
 
     }
     m_lecteur.avancer();
-        //cout << m_lecteur.getSymbole().getChaine() << "p";
-    return new NoeudInstLire();
+    return ne;
 }
 
 void Interpreteur::traduitEnCPP(ostream & cout, unsigned int indentation) const {

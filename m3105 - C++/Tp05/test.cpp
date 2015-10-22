@@ -1,14 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
 	int a;
-	int b;
+	cout << "Tapez la valeur de a : "; cin >> a;
 
-	cout << "Hello world !";
-	a = 6;
-	b = 9;
-	cout << a <<  b;
+	switch(a)
+	{
+		case 1 :
+			cout << "a vaut 1" << endl;
+			break;
+
+		case 2 :
+			cout << "a vaut 2" << endl;
+			break;
+
+		case 3 :
+			cout << "a vaut 3" << endl;
+			break;
+
+	}
 	return 0;
 }
-
