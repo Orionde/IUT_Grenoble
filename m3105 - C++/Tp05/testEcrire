@@ -2,6 +2,6 @@
 procedure principale()
 	ecrire("Hello world !");
 	a = 6;
-	b = 9;
+	b = 4;
 	ecrire(a, b);
 finproc

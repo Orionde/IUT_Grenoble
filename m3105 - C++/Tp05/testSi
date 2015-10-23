@@ -1,0 +1,21 @@
+# Test du si
+# Résultat attendu :
+procedure principale()
+	a = 0 ;
+	b = 1 ;
+#si (1)
+	a = 1 ;
+#finsi
+#si (0)
+#	b = 0 ;
+#finsi
+
+c = 3;
+si(c > a)
+	c = 5
+sinonsi(a >= c)
+	b = 4;
+#sinon
+#	a = 0;
+finsi
+finproc

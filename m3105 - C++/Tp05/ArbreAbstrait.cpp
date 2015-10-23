@@ -259,7 +259,6 @@ void NoeudInstEcrire::traduitEnCPP(ostream & cout, unsigned int indentation) con
     cout << setw(4 * indentation) << "" << "cout <<";
     for (unsigned int i = 0; i < m_instructions.size(); i++) {
         cout << " " << ((SymboleValue*) m_instructions[i])->getChaine();
-        cout << " " << ((SymboleValue*) m_instructions[i+1])->getChaine();
         if (i < m_instructions.size() - 1)
             cout << " << ";
     }

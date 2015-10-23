@@ -77,7 +77,6 @@ Noeud* Interpreteur::inst() {
         testerEtAvancer(";");
         return affect;
     } else if (m_lecteur.getSymbole() == "si") {
-
         return instSi();
     } else if (m_lecteur.getSymbole() == "tantque") {
         return instTantQue();
@@ -171,10 +170,8 @@ Noeud* Interpreteur::instSi() {
     }
 
     if (m_lecteur.getSymbole() == "sinon") {
-
         m_lecteur.avancer();
         Noeud* sequence = seqInst();
-
     }
     testerEtAvancer("finsi");
     new NoeudInstSi(condition, sequence); // Et on renvoie un noeud Instruction Si
