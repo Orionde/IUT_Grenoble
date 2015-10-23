@@ -1,0 +1,20 @@
+# Test du si
+# Résultat attendu :
+# a = 1
+# b = 1
+# c = 5
+procedure principale()
+	a = 0 ;
+	b = 1 ;
+si (1)
+	a = 1 ;
+finsi
+si (0)
+	b = 0 ;
+sinon
+	c = 5;
+finsi
+si(a == b)
+	ecrire("ok");
+finsi
+finproc

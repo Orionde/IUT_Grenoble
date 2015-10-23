@@ -284,8 +284,9 @@ void Interpreteur::traduitEnCPP(ostream & cout, unsigned int indentation) const 
     // Ecrire en C++ la déclaration des variables présentes dans le programme...  
     // ... variables dont on retrouvera le nom en parcourant la table des symboles !  
     // Par exemple, si le programme contient i,j,k, il  faudra écrire : int i; int j; int k; ... 
-    for (unsigned int i; i < m_table.getTaille(); i++) {
+    for (unsigned int i = 0; i < m_table.getTaille(); i++) {
 
+        
         if (m_table[i] == "<VARIABLE>") {
             cout << setw(4 * indentation) << "" << "int ";
             m_table[i].traduitEnCPP(cout, 0);

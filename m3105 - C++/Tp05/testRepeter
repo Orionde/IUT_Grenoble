@@ -1,3 +1,6 @@
+#test du répéter
+# valeurs attendues :
+# a = 5
 procedure principale()
 	a = 0 ;
 	repeter a = a + 1;

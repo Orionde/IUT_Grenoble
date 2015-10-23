@@ -218,7 +218,7 @@ void NoeudInstPour::traduitEnCPP(ostream & cout, unsigned int indentation) const
 
     cout << ") {" << endl;
     m_sequence->traduitEnCPP(cout, indentation + 1);
-    cout << setw(4 * indentation) << "" << "}";
+    cout << setw(4 * indentation) << "" << "}" << endl;
 
 }
 

@@ -1,4 +1,6 @@
 #test du tantQue
+# valeurs attendues:
+# a = 5
 procedure principale()
 a = 5;
 tantque(a < 4)
