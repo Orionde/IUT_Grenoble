@@ -1,3 +1,7 @@
+# test du pour
+# resultats attendus :
+# a = 10
+# i = 5
 procedure principale()
 	a = 0 ;
 	pour(i = 0 ; i < 5 ; i = i + 1)

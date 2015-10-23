@@ -192,10 +192,6 @@ NoeudInstPour::NoeudInstPour(Noeud* condition, Noeud* seq, Noeud* aff1, Noeud * 
 }
 
 int NoeudInstPour::executer() {
-    cout << m_affectation << endl;
-    cout << m_affectation1 << endl;
-    cout << m_condition << endl;
-    cout << m_sequence << endl;
     if (m_affectation != nullptr && m_affectation1 != nullptr) {
         m_affectation->executer();
         while (m_condition->executer()) {
