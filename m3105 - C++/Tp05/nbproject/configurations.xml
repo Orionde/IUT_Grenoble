@@ -15,6 +15,13 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>testEcrire</itemPath>
+      <itemPath>testLire</itemPath>
+      <itemPath>testPour</itemPath>
+      <itemPath>testRepeter</itemPath>
+      <itemPath>testSi</itemPath>
+      <itemPath>testSi2</itemPath>
+      <itemPath>testTQ</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -80,6 +87,20 @@
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="testEcrire" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testLire" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testPour" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testRepeter" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testSi" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testSi2" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testTQ" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -128,6 +149,20 @@
       <item path="TableSymboles.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="testEcrire" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testLire" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testPour" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testRepeter" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testSi" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testSi2" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testTQ" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
