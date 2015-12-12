@@ -1,0 +1,633 @@
+<wiktionary>
+	<entry form="souris" pageid="2029">
+	<etym>(Nom 1)  De l'ancien français suriz , du latin populaire sōrīcem, accusatif de sōrīx, en latin classique sōrex, -ĭcis,  de même sens.(Nom 2) Du français soubris (1538), de « sourire ».(Adjectif) En raison de la couleur habituelle de l'animal.</etym>
+	<lexeme pos="N" id="fr_N_souris#0">
+		<defs>
+			<toplevel-def>
+				<gloss misc="zool">Petit rongeur de la famille des muridés, du genre Mus, en général la souris commune Mus musculus.</gloss>
+				<example>La terrifiante souris de laboratoire est redoutée par tous les étudiants.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss misc="info">Périphérique pour ordinateur, système de pointage.</gloss>
+				<example>La souris pour ordinateur est un système de pointage.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss misc="boucherie">Partie du gigot de mouton.</gloss>
+				<example>J'adore la souris, c'est mon morceau favori.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss register="Familier">Jeune fille.</gloss>
+				<example>Salut, belle souris.</example>
+			</toplevel-def>
+		</defs>
+		<syn>
+			<item target="fr_N_rongeur">rongeur</item>
+			<item target="fr_N_rat">rat</item>
+			<item target="fr_N_mulot">mulot</item>
+			<item target="fr_N_mulot">mulot</item>
+		</syn>
+		<trans>
+			<item lang="en" target="en_N_mouse">mouse</item>
+			<item lang="en" target="en_N_mice">mice</item>
+			<item lang="en" target="en_N_mouse">mouse</item>
+		</trans>
+	</lexeme>
+	<lexeme pos="N" id="fr_N_souris#0">
+		<defs>
+			<toplevel-def>
+				<gloss misc="arch,dés">Sourire.</gloss>
+				<example>Heureux ceux qui meurent au berceau, ils n'ont connu que les baisers et les souris d'une mère ! Chateaubriand, Atala, 1801</example>
+			</toplevel-def>
+		</defs>
+	</lexeme>
+	<lexeme pos="Adj" id="fr_Adj_souris#0">
+		<defs>
+			<toplevel-def>
+				<gloss>De la couleur gris doux de l'animal.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Couleur de la robe des chevaux gris unis avec les crins et extrémités des membres noirs.</gloss>
+			</toplevel-def>
+		</defs>
+	</lexeme>
+	<lexeme pos="flex-verb" id="fr_flex-verb_souris#0">
+		<defs>
+			<toplevel-def>
+				<gloss>Première personne de l'incatif présent du verbe sourire.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Deuxième personne de l'incatif présent du verbe sourire.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Première personne du passé simple du verbe sourire.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Deuxième personne du passé simple du verbe sourire.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Deuxième personne de l'impératif présent du verbe sourire.</gloss>
+			</toplevel-def>
+		</defs>
+	</lexeme>
+</entry>
+<entry form="siège" pageid="35">
+	<etym>Du latin sedile (« siège, chaise, banquette, gradins, banc de rameurs, perchoir, juchoir ») dont le diminutif est sediculum, devenu en bas-latin sedicum qui a donné siège. Il est lié au verbe latin sedere (« asseoir »).</etym>
+	<lexeme pos="N" id="fr_N_siège#0">
+		<defs>
+			<toplevel-def>
+				<gloss>Meuble utilisé pour s'asseoir.</gloss>
+				<example>Sophie s'assoit sur le siège de la voiture.</example>
+				<example>Donnez un siège, des sièges.</example>
+				<example>Apportez, avancez un siège.</example>
+				<example>Prenez un siège.</example>
+				<example>Un siège pliant.</example>
+				<example>Sièges de paille, de jonc, de canne.</example>
+				<example>Sièges de pierre, de marbre, de gazon : Bancs de pierre ou de marbre, petites buttes de gazon dans des jardins.</example>
+				<example>Le siège d'un cocher : Banquette où le cocher est assis pour conduire les chevaux et mener la voiture.</example>
+				<example>Le siège d'une selle : La partie de la selle sur laquelle le cavalier est assis.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Anatomie">Partie du corps sur laquelle on s'assied.</gloss>
+				<example>Bain de siège.</example>
+				<example>Le bébé s'est présenté par le siège : Il est sorti par le bassin au lieu de la tête.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss register="vieux" semantic="Par extension">Place où le juge s'assied pour rendre la justice.  Lieu où l'on rendait la justice, dans les juridictions subalternes et  corps et juridiction des juges subalternes.</gloss>
+				<example>Le juge étant sur son siège.</example>
+				<example>Allez au siège.</example>
+				<example>Vous le trouverez au siège.</example>
+				<example>C'était l'usage de tel siège.</example>
+				<example>Le ressort de ce siège était de telle étendue.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Place honorifique, mandat.</gloss>
+				<example>Un siège de député.</example>
+				<example>Il a perdu son siège au Sénat.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Endroit où est établi quelqu'un ou quelque chose.</gloss>
+				<example>Pessan, le siège d'une antique abbaye, a une superficie de 2588 hectares où végètent encore 430 habitants. Ludovic Naudeau }, La France se regarde. Le problème de la natalité -1931</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="En particulier">Lieu où se réunit la direction d'un gouvernement, d'une administration, d'une entreprise, etc.</gloss>
+				<example>Il faut envoyer cette lettre au siège social, qui est situé à Toulouse.</example>
+				<example>Le siège d'un tribunal, d'une cour. - Le siège du gouvernement.</example>
+				<example>Rome était le siège de l'Empire romain.</example>
+				<example reference="siège social">Le siège d'une société.</example>
+				<sublevel-def>
+					<gloss reference="Saint-Siège" semantic="En particulier">Un évêché et sa juridiction .</gloss>
+				</sublevel-def>
+				<sublevel-def>
+					<gloss>: Siège patriarcal, primatial, épiscopal, pontifical.</gloss>
+				</sublevel-def>
+				<sublevel-def>
+					<gloss>: Cet évêque a occupé le siège tant d'années.</gloss>
+				</sublevel-def>
+				<sublevel-def>
+					<gloss>: Pendant la vacance du siège.</gloss>
+				</sublevel-def>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Figuré">Lieu où certaines choses résident principalement, où elles dominent.</gloss>
+				<example>L'odorat, qui a pour siège les poils olfactifs est , chez lui, rudimentaire, et partiellement inhibé par la vision. Jean Rostand, La vie des crapauds , 1933</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Militaire">Action consistant à bloquer son adversaire dans son propre camp et attendre qu'il manque de ressources.</gloss>
+				<example>[…] , il se résolut non à la retraite, mais à changer le siège en blocus, espérant être plus heureux pendant la nuit par un hardi coup de main, ou, en désespoir de cause, certain de réduire tôt ou tard les assiégés par la famine. Gustave Aimard, Les Trappeurs de l'Arkansas, 1858</example>
+				<example>Si les Spinaliens soutinrent vaillamment un siège contre Charles le Téméraire, il n'en fut pas de même, deux siècles plus tard, quand Louis XIV déploya contre eux  ses forces […]. Gustave Fraipont; Les Vosges, 1923</example>
+			</toplevel-def>
+		</defs>
+		<syn>
+			<item target="fr_N_voir les hyponymes.">voir les hyponymes.</item>
+			<item target="fr_N_cul">cul</item>
+			<item target="fr_N_derrière">derrière</item>
+			<item target="fr_N_fondement">fondement</item>
+			<item target="fr_N_blocus">blocus</item>
+		</syn>
+		<trans>
+			<item lang="en" target="en_N_seat">seat</item>
+			<item lang="en" target="en_N_siege">siege</item>
+			<item lang="en" target="en_N_chair">chair</item>
+		</trans>
+		<hyper>
+			<item target="fr_N_meuble">meuble</item>
+		</hyper>
+		<hypo>
+			<item target="fr_N_balançoire">balançoire</item>
+			<item target="fr_N_banc">banc</item>
+			<item target="fr_N_banquette">banquette</item>
+			<item target="fr_N_berceuse">berceuse</item>
+			<item target="fr_N_bergère">bergère</item>
+			<item target="fr_N_boudeuse">boudeuse</item>
+			<item target="fr_N_brouette">brouette</item>
+			<item target="fr_N_cabriolet">cabriolet</item>
+			<item target="fr_N_canapé">canapé</item>
+			<item target="fr_N_caquetoire">caquetoire</item>
+			<item target="fr_N_cathèdre">cathèdre</item>
+			<item target="fr_N_causeuse">causeuse</item>
+			<item target="fr_N_chaire">chaire</item>
+			<item target="fr_N_chaise">chaise</item>
+			<item target="fr_N_chaise curule">chaise curule</item>
+			<item target="fr_N_chaise longue">chaise longue</item>
+			<item target="fr_N_chaise percée">chaise percée</item>
+			<item target="fr_N_chauffeuse">chauffeuse</item>
+			<item target="fr_N_clic-clac">clic-clac</item>
+			<item target="fr_N_coffre">coffre</item>
+			<item target="fr_N_coussin">coussin</item>
+			<item target="fr_N_crapaud">crapaud</item>
+			<item target="fr_N_dagobert">dagobert</item>
+			<item target="fr_N_divan">divan</item>
+			<item target="fr_N_escabeau">escabeau</item>
+			<item target="fr_N_escarpolette">escarpolette</item>
+			<item target="fr_N_estrade">estrade</item>
+			<item target="fr_N_faldistoire">faldistoire</item>
+			<item target="fr_N_fauteuil">fauteuil</item>
+			<item target="fr_N_filanzane">filanzane</item>
+			<item target="fr_N_gradin">gradin</item>
+			<item target="fr_N_marquise">marquise</item>
+			<item target="fr_N_méridienne">méridienne</item>
+			<item target="fr_N_miséricorde">miséricorde</item>
+			<item target="fr_N_montauban">montauban</item>
+			<item target="fr_N_ottomane">ottomane</item>
+			<item target="fr_N_palanquin">palanquin</item>
+			<item target="fr_N_pliant">pliant</item>
+			<item target="fr_N_pouf">pouf</item>
+			<item target="fr_N_récamier">récamier</item>
+			<item target="fr_N_rocking-chair">rocking-chair</item>
+			<item target="fr_N_séant">séant</item>
+			<item target="fr_N_selle">selle</item>
+			<item target="fr_N_sellette">sellette</item>
+			<item target="fr_N_sofa">sofa</item>
+			<item target="fr_N_stalle">stalle</item>
+			<item target="fr_N_strapontin">strapontin</item>
+			<item target="fr_N_tabouret">tabouret</item>
+			<item target="fr_N_tan-sad">tan-sad</item>
+			<item target="fr_N_tête-à-tête">tête-à-tête</item>
+			<item target="fr_N_transat">transat</item>
+			<item target="fr_N_trépied">trépied</item>
+			<item target="fr_N_trône">trône</item>
+			<item target="fr_N_vinaigrette">vinaigrette</item>
+			<item target="fr_N_voltaire">voltaire</item>
+			<item target="fr_N_voyeuse">voyeuse</item>
+		</hypo>
+	</lexeme>
+	<lexeme pos="flex-verb" id="fr_flex-verb_siège#0">
+		<defs>
+			<toplevel-def>
+				<gloss>Du verbe siéger.</gloss>
+			</toplevel-def>
+		</defs>
+	</lexeme>
+</entry>
+<entry form="grain" pageid="2059">
+	<etym>Du latin granum (« grain »). Utilisé à partir de 1552 dans le sens de « tempête, vent », peut-être à cause des grêlons, des giboulées qui peuvent l'accompagner.</etym>
+	<lexeme pos="N" id="fr_N_grain#0">
+		<defs>
+			<toplevel-def>
+				<gloss>Fruit et semence des céréales contenu dans l'épi ; des légumineuses.</gloss>
+				<example>La balle, première enveloppe du grain de riz, est éliminée par décorticage.</example>
+				<sublevel-def>
+					<gloss>Il se dit souvent absolument surtout au pluriel.</gloss>
+					<example>La récolte, le commerce des grains.</example>
+				</sublevel-def>
+				<sublevel-def>
+					<gloss>Ce qu'on sème pour la reproduction des céréales.</gloss>
+					<example>Gros grains, froment, méteil et seigle.</example>
+					<example>Menus grains, orge, avoine, mil, vesce, etc.</example>
+					<example>Poulets de grain, petits poulets qu'on nourrit de grain.</example>
+				</sublevel-def>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par analogie">Fruit de certaines plantes et de certains arbrisseaux.</gloss>
+				<example>Grain de raisin.</example>
+				<example>Grain de grenade.</example>
+				<example>Grain de poivre.</example>
+				<example>Grain de café.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par analogie">Petit objet de la taille d'une graine.</gloss>
+				<example>Un grain de sable suffirait à bloquer le mécanisme.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par analogie">Chose faite à peu près en forme de grains.</gloss>
+				<example>Grain de chapelet.</example>
+				<example register="Familier" semantic="Figuré">et  Un catholique à gros grains. Voyez « catholique ».</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Figuré">Très petite quantité de quelque chose.</gloss>
+				<example>N'avoir pas un grain de bon sens, un grain de jugement, etc., En être tout à fait dépourvu.</example>
+				<example>Elle a un petit grain de coquetterie, elle a un peu de coquetterie.</example>
+				<example>Avoir un grain de folie dans la tête, ou Avoir un grain, être un peu fou.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss register="vieux">Poids qui était le soixante-douzième d'un gros.</gloss>
+				<example>Cette pièce d'or est légère d'un grain.</example>
+				<example>Le grain équivaut à cinq centigrammes et trois milligrammes.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par analogie">Petites aspérités présentes à la surface de certaines étoffes, de certains cuirs, de certaines peaux.</gloss>
+				<example>Le grain de sa peau est d'une finesse incroyable.</example>
+				<example>Ce maroquin est d'un beau grain.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Physique">Petit élément homogène ou monocristallin dans une matériau non amorphe. Parties ténues et serrées entre elles qui forment la masse des pierres, des métaux, etc., et que l'on aperçoit à l'endroit où ils sont cassés ou coupés.</gloss>
+				<example>Ce marbre est d'un grain plus fort que l'autre.</example>
+				<example>La taille des grains est déterminante pour la dureté des aciers.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par extension">Plus petit détail visible d'un tirage photographique, d'une impression et qui définit la qualité de sa résolution.</gloss>
+				<example>Le grain de cette photographie est particulièrement grossier.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss misc="météo,marine">Vent violent et de peu de durée qui s'élève soudainement et qui est généralement accompagné de précipitations.</gloss>
+				<example>Un grain se produit généralement au passage d'une ligne d'orages.</example>
+				<example>Une ligne de grains.</example>
+			</toplevel-def>
+		</defs>
+		<syn>
+			<item target="fr_N_orage">orage</item>
+			<item target="fr_N_tempête">tempête</item>
+		</syn>
+		<trans>
+			<item lang="en" target="en_N_grain">grain</item>
+			<item lang="en" target="en_N_granule">granule</item>
+			<item lang="en" target="en_N_pip">pip</item>
+			<item lang="en" target="en_N_speck">speck</item>
+			<item lang="en" target="en_N_squall">squall</item>
+		</trans>
+	</lexeme>
+	<lexeme pos="Adv" id="fr_Adv_grain#0">
+		<defs>
+			<toplevel-def>
+				<gloss register="vieux">Pas. Utilisé avec ne pour négation.</gloss>
+				<example>Ce cierge ne savait grain de philosophie. (Jean de La Fontaine, Le Cierge, 1678-1679)</example>
+			</toplevel-def>
+		</defs>
+		<syn>
+			<item target="fr_Adv_goutte">goutte</item>
+			<item target="fr_Adv_mie">mie</item>
+			<item target="fr_Adv_pas">pas</item>
+			<item target="fr_Adv_point">point</item>
+		</syn>
+	</lexeme>
+</entry>
+<entry form="pied" pageid="2087">
+	<etym>Du  pĕdem, accusatif de pĕs, (« pied », « patte »).</etym>
+	<lexeme pos="N" id="fr_N_pied#0">
+		<defs>
+			<toplevel-def>
+				<gloss domain="Anatomie">Partie du corps humain située à l'extrémité des jambes.</gloss>
+				<example>Cette femme a de petits pieds.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par métonymie">Chaussure correspondant à un pied particulier.</gloss>
+				<example>J'ai le pied droit, mais je ne retrouve pas le pied gauche.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Zoologie">Partie à l'extrémité des pattes des animaux ou partie permettant aux mollusques de se déplacer.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Partie inférieure de quelque chose ou de quelqu'un.</gloss>
+				<example>Je suis au pied de la Tour Eiffel.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Métrologie" misc="cf">Unité de mesure de longueur du système impérial britannique (symbole : ft).  foot.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Métrologie">Ancienne unité de mesure de longueur française (symbole : P).</gloss>
+				<example>« Le mètre est égal à 3 pieds et 11,296 lignes de la toise de Paris ». loi du 19 frimaire an VIII</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Linguistique,Poésie">Suite de syllabes regroupées dans la scansion.</gloss>
+				<example>L'hexamètre comporte six pieds.</example>
+				<example>Un spondée est un pied comportant deux syllabes longues.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par analogie">Syllabe en versification française.</gloss>
+				<example>Le nombre de pieds constitue la mesure ou le mètre du vers.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss register="Familier" misc="France">Bonheur, chose de très agréable.</gloss>
+				<example>Partir un mois en vacances, quel pied !</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss misc="bota">Partie d'un champignon, de la tige d'une plante, du tronc d'un arbuste en liaison avec le sol.</gloss>
+				<example>Le câprier peut supporter l'hiver, si on coupe ses rameaux et qu'on butte son pied à la fin de l'automne.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Plant de la vigne, cep de vigne.</gloss>
+				<example>Il faut bien regarder chaque pied de vigne, afin de lui laisser le nombre exact de bourgeons.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par extension">Plante, arbuste.</gloss>
+				<example>Nous avons environ cinquante pieds de framboisiers.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Héraldique">Ours en pied : Ours debout ; on dit plus fréquemment ours levé.</gloss>
+			</toplevel-def>
+		</defs>
+		<syn>
+			<item target="fr_N_arpion">arpion</item>
+			<item target="fr_N_nougat">nougat</item>
+			<item target="fr_N_panard">panard</item>
+			<item target="fr_N_paturon">paturon</item>
+			<item target="fr_N_peton">peton</item>
+			<item target="fr_N_ripaton">ripaton</item>
+			<item target="fr_N_assise">assise</item>
+			<item target="fr_N_bas">bas</item>
+			<item target="fr_N_base">base</item>
+			<item target="fr_N_syllabe">syllabe</item>
+			<item target="fr_N_bonheur">bonheur</item>
+			<item target="fr_N_panard">panard</item>
+			<item target="fr_N_cep">cep</item>
+			<item target="fr_N_plant">plant</item>
+		</syn>
+		<trans>
+			<item lang="en" target="en_N_foot">foot</item>
+			<item lang="en" target="en_N_feet">feet</item>
+			<item lang="en" target="en_N_paw">paw</item>
+		</trans>
+	</lexeme>
+</entry>
+<entry form="heure" pageid="2097">
+	<etym>(Temps) Du grec ancien ὥρα (ôra), en latin hora.(15 degrés) Du fait qu'en une heure, la Terre effectue une rotation (sidérale) de 360 / 24 = 15 degrés.(Directions) De l'utilisation d'un cadran d'horloge ou de montre en donnant le nombre des heures comme nom à la direction.</etym>
+	<lexeme pos="N" id="fr_N_heure#0">
+		<defs>
+			<toplevel-def>
+				<gloss domain="Métrologie">Unité de mesure du temps, compatible avec le Système international, dérivée de la seconde, dont le symbole est h.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>:* 1 heure = 60 minutes = 3600 secondes.</gloss>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Ce temps lui-même.</gloss>
+				<example>… on la fait tremper pendant trois ou quatre heures, après quoi on la retire du bain, on laisse égoutter et on essore. D. de Prat, Nouveau manuel complet de filature; 1re partie: Fibres animales &amp; minérales, Encyclopédie Roret, 1914</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Une des vingt-quatre divisions de la journée, durant soixante minutes.</gloss>
+				<example>La deuxième heure de la journée</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>L'époque, le moment du jour considérés par rapport au temps, aux heures écoulées depuis minuit ou depuis midi.</gloss>
+				<example>Les veilles furent fixées à deux heures chacune, en ce moment, neuf heures et demie sonnaient à l'église de Kervenheim. Alexandre Dumas, Othon l'archer, 1839</example>
+				<example>Je vous attends demain à cette heure-ci. Vous êtes sûr de le trouver chez lui à cette heure- là.</example>
+				<example>Ce train arrive à quatorze heures, à vingt-trois heures. Jusqu'à deux heures du matin. Il était une heure après minuit.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Indication de l'heure qu'il est, donnée par une horloge, par une montre, etc.</gloss>
+				<example>Il est trois heures, trois heures vingt minutes à ma montre, à l'horloge, au cadran.</example>
+				<example>L'heure vient de sonner. L'horloge a sonné deux heures.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss grammar="Au pluriel">quelquefois Les signes d'un cadran qui servent à l'indication des heures.</gloss>
+				<example>Les heures de ce cadran sont en chiffres romains, en chiffres arabes. Les heures de ce cadran sont effacées.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Moment qu'on indique, qu'on fixe pour un rendez-vous, pour une affaire, etc.</gloss>
+				<example>Choisir une heure. Fixer une heure. Convenir d'une heure. Il m'a donné heure à cinq heures.</example>
+				<example>Note : Dans ce sens, il est quelquefois précédé de l'adjectif possessif.</example>
+				<example>Donner son heure. Demander à quelqu'un son heure.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Moment de la journée où l'on fait habituellement quelque chose.</gloss>
+				<example>Il est l'heure de dîner. Il est l'heure de se coucher.</example>
+				<example>Il est l'heure de se retirer. Avancer l'heure du dîner.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Divers moments de la journée, par rapport à la manière dont on les passe, dont on les emploie.</gloss>
+				<example>Note : Dans ce sens on le met ordinairement au pluriel, et il est souvent précédé de l'adjectif possessif.</example>
+				<example>Passer les heures entières à quelque chose. Passer agréablement les heures. Employer bien, employer mal les heures.</example>
+				<example>Avoir ses heures d'étude, ses heures de récréation. Il n'a point de temps à perdre, toutes ses heures sont précieuses, lui sont précieuses.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>plus largement Temps, moment, époque quelconque.</gloss>
+				<example>L'heure est venue de vous révéler ce mystère. Les chagrins avancèrent l'heure de sa mort. L'heure de sa ruine allait sonner.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Absolument">avec l'adjectif possessif Temps, moment où quelque chose doit arriver à quelqu'un.</gloss>
+				<example>Il y avait longtemps qu'il sollicitait; enfin son heure est venue, on lui a donné le poste qu'il désirait.</example>
+				<example>Il y a longtemps qu'on parlait de la marier, mais son heure n'était pas encore venue.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="En particulier">Le moment de la mort.</gloss>
+				<example>Il est réchappé d'une grande maladie, son heure n'était pas encore venue. Mon heure est arrivée.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>souvent  Moment, temps, époque.</gloss>
+				<example>L'heure présente.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par extension">Unité d'angle valant 15 degrés.</gloss>
+				<example>heure d'ascension droite</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par extension">Utilisé pour indiquer les directions approximatives.</gloss>
+				<example>Cible à 3 heures - cible à droite</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Religion" reference="heures" grammar="Au pluriel" semantic="Par ellipse">Livre d'heures.</gloss>
+			</toplevel-def>
+		</defs>
+		<trans>
+			<item lang="en" target="en_N_hour">hour</item>
+			<item lang="en" target="en_N_o'clock">o'clock</item>
+		</trans>
+	</lexeme>
+</entry>
+<entry form="faux" pageid="10734">
+	<etym>(Adjectif, nom 1) Du  falsus, de fallere (« tromper »).(Nom 2) Du  falx, falcis (sens identique).</etym>
+	<lexeme pos="Adj" id="fr_Adj_faux#0">
+		<defs>
+			<toplevel-def>
+				<gloss>Qui n'est pas conforme ou qui ne se conforme pas à la réalité. Quand il s'agit des idées et des sentiments, et de leur expression, il signifie que ces idées, ces sentiments ou leur expression sont contraires à la réalité par erreur ou par imposture.</gloss>
+				<example>Cela est faux.</example>
+				<example>Il n'y a rien de si faux, de plus faux.</example>
+				<example>Il est faux que vous m'ayez vu là.</example>
+				<example>Fausse nouvelle.</example>
+				<example>Faux avis.</example>
+				<example>De faux rapports.</example>
+				<example>Faux exposé.</example>
+				<example>Faux témoignage.</example>
+				<example>Religion fausse.</example>
+				<example>Faux serment.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Dans ce sens, il est souvent synonyme de vain et infondé.</gloss>
+				<example>Fausse joie.</example>
+				<example>Fausse crainte.</example>
+				<example>Fausse honte.</example>
+				<example>Fausse pudeur, pudeur qui se trompe d'objet.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Arts">Ce qui s'écarte du naturel.</gloss>
+				<example>Le faux goût qui règne dans cet ouvrage.</example>
+				<example>Fausse éloquence.</example>
+				<example>Dessin faux.</example>
+				<example>Coloris faux.</example>
+				<example>Ton faux.</example>
+				<example>Tableau faux de couleur.</example>
+				<example>Faux brillants, pensées ingénieuses et qui ont quelque éclat, mais qui sont dépourvues de justesse et de solidité.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Qui manque d'exactitude, de justesse, de rectitude.</gloss>
+				<example>Règle fausse.</example>
+				<example>Faux calcul.</example>
+				<example>Argument, raisonnement faux.</example>
+				<example>Avoir le jugement, l'esprit, le goût faux.</example>
+				<example>Les esprits faux sont dangereux.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Qui, soit volontairement et dans un dessein de mensonge, soit involontairement, par suite d'insuffisance, ne répondent pas à leur nom, à leur nature présumée, à leurs apparences.</gloss>
+				<example>Fausse piété.</example>
+				<example>Faux zèle.</example>
+				<example>Fausse modestie.</example>
+				<example>Fausse politesse.</example>
+				<example>Faux contrat.</example>
+				<example>Faux acte.</example>
+				<example>Faux titre.</example>
+				<example>Faux testament.</example>
+				<example>Faux poids.</example>
+				<example>Faux diamants.</example>
+				<example>Bijoux faux.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Qui est postiche, contrefait, sans qu'il y ait dans l'objet postiche ou dans la contrefaçon une intention de simulation coupable.</gloss>
+				<example>Fausse porte.</example>
+				<example>Fausse fenêtre.</example>
+				<example>Fausse dent.</example>
+				<example>Faux cheveux.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Désigne des phénomènes ou des objets qui présentent l'apparence de phénomènes ou d'objets différents en réalité et peuvent ainsi causer des méprises.</gloss>
+				<example>Fausse couche, couche avant terme.</example>
+				<example>Faux croup, maladie des organes respiratoires qui ressemble à la diphtérie.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss semantic="Par extension">S'applique à des objets ou à des actes irréguliers, incorrects, insuffisants, manquant à leur destination.</gloss>
+				<example>Faux mouvement, faux bond.</example>
+				<example>Faux pas.</example>
+				<example>Faire un faux pas.</example>
+				<example>Fausse manœuvre.</example>
+				<example>Faire fausse route.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Musique">Qui n'est pas juste, qui n'est pas dans le ton.</gloss>
+				<example>Voix fausse.</example>
+				<example semantic="Figuré">Fausse note, note jouée ou chantée dont l'intonation n'est pas altérée, mais qui n'est pas à cette place la note véritable et demandée.  Qui est déplacé, discordant.</example>
+				<example>Sa violente interruption fut une fausse note dans cette discussion courtoise.</example>
+				<example>Sa tristesse mit une fausse note dans la joie universelle.</example>
+				<example>Fausse corde, Corde qui n'est pas montée au ton juste.</example>
+				<example>Corde fausse, Corde qui ne peut jamais s'accorder avec une autre.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>En parlant d'une personnes, qui n'est pas ce qu'elle semble ou ce qu'elle dit être.</gloss>
+				<example>Le faux Smerdis, le faux Démétrius, Les imposteurs qui se firent passer pour Smerdis, pour Démétrius.</example>
+				<example>Faux prophète.</example>
+				<example>Faux brave.</example>
+				<example>Il s'est glissé parmi eux un faux frère qui les a trahis.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss>Qui affecte des sentiments qu'il n'a pas, dans le dessein de tromper.</gloss>
+				<example>Il est faux.</example>
+				<example>C'est un homme faux.</example>
+				<example>Être faux comme un jeton. Par extension,</example>
+				<example>Cœur faux.</example>
+				<example>Caractère faux.</example>
+				<example>Cet homme a l'air faux, le regard faux, la mine fausse.</example>
+			</toplevel-def>
+		</defs>
+		<trans>
+			<item lang="en" target="en_Adj_false">false</item>
+			<item lang="en" target="en_Adj_wrong">wrong</item>
+		</trans>
+	</lexeme>
+	<lexeme pos="N" id="fr_N_faux#0">
+		<defs>
+			<toplevel-def>
+				<gloss grammar="Au singulier">Ce qui n'est pas vrai, ce qui n'est pas conforme à la vérité.</gloss>
+				<example>Discerner le faux d'avec le vrai.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss register="Littéraire" grammar="Au singulier">Ce qui manque de vérité et de naturel.</gloss>
+				<example>Avoir l'horreur du faux.</example>
+			</toplevel-def>
+			<toplevel-def>
+				<gloss domain="Jurisprudence">Altération, contrefaçon, supposition frauduleuse d'actes, de pièces, d'écritures publiques.</gloss>
+				<example>Le vote à peine clos, nous entendions dans les couloirs quelques-uns de nos anciens émettre des doutes sur la qualité du papier. - « C'est certainement un faux » disait Rouvier. C'était en effet un faux, le faux du colonel Henry. Joseph Caillaux }, Mes Mémoires, I, Ma jeunesse orgueilleuse, 1942</example>
+			</toplevel-def>
+		</defs>
+		<trans>
+			<item lang="en" target="en_N_counterfeit">counterfeit</item>
+			<item lang="en" target="en_N_forgery">forgery</item>
+		</trans>
+	</lexeme>
+	<lexeme pos="N" id="fr_N_faux#0">
+		<defs>
+			<toplevel-def>
+				<gloss domain="Agriculture">Outil manuel utilisé en agriculture et en jardinage pour faucher l'herbe et récolter les céréales.</gloss>
+			</toplevel-def>
+		</defs>
+		<trans>
+			<item lang="en" target="en_N_scythe">scythe</item>
+		</trans>
+	</lexeme>
+	<lexeme pos="Adv" id="fr_Adv_faux#0">
+		<defs>
+			<toplevel-def>
+				<gloss>De façon fausse, de travers, mal.</gloss>
+				<example>Raisonner faux.</example>
+				<example>Chanter faux.</example>
+				<example>Jouer faux.</example>
+				<example>Sonner faux.</example>
+			</toplevel-def>
+		</defs>
+	</lexeme>
+	<lexeme pos="flex-verb" id="fr_flex-verb_faux#0">
+		<defs>
+			<toplevel-def>
+				<gloss>Du verbe faillir.</gloss>
+			</toplevel-def>
+		</defs>
+	</lexeme>
+</entry>
+</wiktionary>
