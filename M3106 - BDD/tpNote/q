@@ -1,0 +1,60 @@
+       nomp       | espèce  |     genre     
+------------------+---------+---------------
+ Obi-Wan Kenobi   | humain  | masculin
+ Jabba            | hutt    | Hermaphrodite
+ Han Solo         | humain  | masculin
+ Han Solo         | humain  | masculin
+ Han Solo         | humain  | masculin
+ Han Solo         | humain  | masculin
+ Chawbacca        | wookie  | masculin
+ Chawbacca        | wookie  | masculin
+ Chawbacca        | wookie  | masculin
+ Chawbacca        | wookie  | masculin
+ Luke Skywalker   | humain  | masculin
+ Luke Skywalker   | humain  | masculin
+ Luke Skywalker   | humain  | masculin
+ Leia Organa      | humain  | féminin
+ Leia Organa      | humain  | féminin
+ Leia Organa      | humain  | féminin
+ Leia Organa      | humain  | féminin
+ Yoda             | Inconnu | masculin
+ Yoda             | Inconnu | masculin
+ Yoda             | Inconnu | masculin
+ Yoda             | Inconnu | masculin
+ Yoda             | Inconnu | masculin
+ Anakin Skywalker | humain  | masculin
+ Anakin Skywalker | humain  | masculin
+ Anakin Skywalker | humain  | masculin
+ Dark Vador       | humain  | masculin
+ Dark Vador       | humain  | masculin
+ Dark Vador       | humain  | masculin
+ Obi-Wan Kenobi   | humain  | masculin
+ Obi-Wan Kenobi   | humain  | masculin
+ Obi-Wan Kenobi   | humain  | masculin
+ Qui-Gon Jinn     | humain  | masculin
+ Dark Maul        | Zabrak  | masculin
+ Palpatine        | humain  | masculin
+ Palpatine        | humain  | masculin
+ Palpatine        | humain  | masculin
+ Palpatine        | humain  | masculin
+ Palpatine        | humain  | masculin
+ Padmé Amidala    | humain  | féminin
+ Padmé Amidala    | humain  | féminin
+ Padmé Amidala    | humain  | féminin
+ R2-D2            | droide  | aucun
+ R2-D2            | droide  | aucun
+ R2-D2            | droide  | aucun
+ R2-D2            | droide  | aucun
+ R2-D2            | droide  | aucun
+ R2-D2            | droide  | aucun
+ C-3PO            | droide  | aucun
+ C-3PO            | droide  | aucun
+ C-3PO            | droide  | aucun
+ C-3PO            | droide  | aucun
+ C-3PO            | droide  | aucun
+ C-3PO            | droide  | aucun
+ Jango Fett       | humain  | masculin
+ Boba Fett        | humain  | masculin
+ Boba Fett        | humain  | masculin
+(56 rows)
+
