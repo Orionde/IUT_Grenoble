@@ -216,6 +216,19 @@ void testeEstInfoPresentRec(){
     
 }
 
+void testAffichePile(){
+    ListeChainee<string> uneListe;
+    cout << "Insertion de zéro, un, deux, trois, quatre, cinq aux positions repectives 1, 2, 3, 4, 5" << endl;
+    string items[] = {"zéro", "un", "deux", "trois", "quatre", "cinq"};
+    for (int i = 0; i < 6; i++) {
+        cout << "Ajout de : " << items[i] << endl;
+        bool success = uneListe.insereAtPositRecAvecProc(i + 1, items[i]);
+        if (!success) {
+            cout << "Ajout de : " << items[i] << " à la liste impossible." << endl;
+        }
+    }
+    uneListe.afficheDGIterWithStack();
+}
 int main() {
     /*
      * Décommenter une par une chaque procédure quand vous êtes prêt à
@@ -231,7 +244,7 @@ int main() {
     //testeSupprimeAtPositRecAvecProc();
     //testeEstInfoPresentRec();   // A ECRIRE !!!!
     //testeInsereAtPositIter();
-   testeSupprimeAtPositIter();
+    testAffichePile();
     //testeAfficheIter();
     return 0;
 }

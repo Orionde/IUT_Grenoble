@@ -9,6 +9,7 @@
 
 #include <cassert>
 #include <cstdlib>
+#include <stack>
 
 #include "Cellule.h"
 #include "ListeChainee.h"
@@ -127,22 +128,20 @@ void ListeChainee<TypeInfo>::supprimeTete() {
  */
 template<class TypeInfo>
 bool ListeChainee<TypeInfo>::insereAtPositIter(int nouvellePosition, const TypeInfo& nouvelleInfo) {
-   Cellule<TypeInfo>* ptr;
-    if(nouvellePosition < 1)
+    Cellule<TypeInfo>* ptr;
+    if (nouvellePosition < 1)
         return false;
-    else
-    {
+    else {
         int posCour = 1;
         ptr = ptrTete;
-        while(posCour < nouvellePosition - 1)
-        {
+        while (posCour < nouvellePosition - 1) {
             posCour++;
             ptr = ptr->getSuivante();
         }
         insereTete(nouvelleInfo);
         return true;
     }
-   
+
 } // end inserePositIter
 
 /* FOURNI */
@@ -166,14 +165,12 @@ bool ListeChainee<TypeInfo>::insereAtPositRecAvecProc(int nouvellePosition, cons
 template<class TypeInfo>
 bool ListeChainee<TypeInfo>::supprimeAtPositIter(int position) {
     Cellule<TypeInfo>* ptr;
-    if(position < 1 || position > nbCellules)
+    if (position < 1 || position > nbCellules)
         return false;
-    else
-    {
+    else {
         int posCour = 1;
         ptr = ptrTete;
-        while(posCour < position - 1)
-        {
+        while (posCour < position - 1) {
             ptr = ptr->getSuivante();
             posCour++;
         }
@@ -293,11 +290,11 @@ void ListeChainee<TypeInfo>::insereAtPositRecProcWorker(Cellule<TypeInfo>*& ptrC
     /* RAISONNEMENT
      */
 
-    if(nouvellePosition == 1)
+    if (nouvellePosition == 1)
         insereTeteWorker(ptrCetteListe, nouvelleInfo);
     else
-        insereAtPositRecProcWorker(ptrCetteListe->getRefSuivante(), nouvellePosition -1, nouvelleInfo);
-    
+        insereAtPositRecProcWorker(ptrCetteListe->getRefSuivante(), nouvellePosition - 1, nouvelleInfo);
+
 
 } // end insereAtPositRecProcWorker
 
@@ -315,11 +312,11 @@ void ListeChainee<TypeInfo>::supprimeAtPositRecProcWorker(Cellule<TypeInfo>*& pt
 
     /* RAISONNEMENT
      */
-    if(position == 1)
+    if (position == 1)
         supprimeTeteWorker(ptrCetteListe);
     else
-        supprimeAtPositRecProcWorker(ptrCetteListe->getRefSuivante(), position -1);
-    
+        supprimeAtPositRecProcWorker(ptrCetteListe->getRefSuivante(), position - 1);
+
 
 } // end supprimeAtPositRecProcWorker
 
@@ -363,15 +360,15 @@ void ListeChainee<TypeInfo>::supprimeTeteWorker(Cellule<TypeInfo>*& ptrCetteList
 } // end supprimeTeteWorker
 
 template<class TypeInfo>
-bool ListeChainee<TypeInfo>::estInfoPresenteRec(TypeInfo& infocible){
+bool ListeChainee<TypeInfo>::estInfoPresenteRec(TypeInfo& infocible) {
     return estInfoPresenteRecworker(ptrTete, infocible);
 }
 
 template<class TypeInfo>
-bool ListeChainee<TypeInfo>::estInfoPresenteRecworker(Cellule<TypeInfo> *ptrListe, const TypeInfo& infocible){
-    if(ptrListe == nullptr)
+bool ListeChainee<TypeInfo>::estInfoPresenteRecworker(Cellule<TypeInfo> *ptrListe, const TypeInfo& infocible) {
+    if (ptrListe == nullptr)
         return false;
-    else if(ptrListe->getInfo() == infocible)
+    else if (ptrListe->getInfo() == infocible)
         return true;
     else
         return estInfoPresenteRecworker(ptrListe->getSuivante(), infocible);
@@ -381,15 +378,26 @@ bool ListeChainee<TypeInfo>::estInfoPresenteRecworker(Cellule<TypeInfo> *ptrList
      METHODES PRIVEES D'AFFICHAGE (workers récursifs)                                  
  ****************************************************************************/
 
-/*
- * A COMPLETER
- */
+template<class TypeInfo>
+void ListeChainee<TypeInfo>::afficheDGIterWithStackW(const Cellule<TypeInfo>* ptrListe) const {
+    stack<TypeInfo> pile;
+
+    while (ptrListe != nullptr) {
+        pile.push(ptrListe->getInfo());
+        ptrListe = ptrListe->getSuivante();
+    }
+
+    while (!pile.empty()) {
+        cout << pile.top() << " ";
+        pile.pop();
+    }
+}
+
 template<class TypeInfo>
 void ListeChainee<TypeInfo>::afficheGDWorker(const Cellule<TypeInfo>* ptrListe) const {
-    /* RAISONNEMENT
-     */
 
-    if(ptrListe != nullptr){
+
+    if (ptrListe != nullptr) {
         ptrListe->affiche();
         afficheGDWorker(ptrListe->getSuivante());
     }
@@ -401,8 +409,8 @@ void ListeChainee<TypeInfo>::afficheGDWorker(const Cellule<TypeInfo>* ptrListe) 
  */
 template<class TypeInfo>
 void ListeChainee<TypeInfo>::afficheDGWorker(const Cellule<TypeInfo>* ptrListe) const {
-        if(ptrListe != nullptr){
-        
+    if (ptrListe != nullptr) {
+
         afficheDGWorker(ptrListe->getSuivante());
         ptrListe->affiche();
     }
@@ -416,11 +424,10 @@ template<class TypeInfo>
 void ListeChainee<TypeInfo>::afficheGDIterWorker(Cellule<TypeInfo>* ptrListe) const {
     /* RAISONNEMENT
      */
-     while(ptrListe != nullptr)
-    {
-       ptrListe->affiche();
-       cout << " ";
-       ptrListe = ptrListe->getSuivante();
+    while (ptrListe != nullptr) {
+        ptrListe->affiche();
+        cout << " ";
+        ptrListe = ptrListe->getSuivante();
     }
 
 }
@@ -459,6 +466,13 @@ void ListeChainee<TypeInfo>::afficheDG() {
 template<class TypeInfo>
 void ListeChainee<TypeInfo>::afficheGDIter() const {
     cout << "En parcours itératif de gauche à droite, la liste contient -> ";
+    afficheGDIterWorker(ptrTete);
+    cout << endl;
+}
+
+template<class TypeInfo>
+void ListeChainee<TypeInfo>::afficheDGIterWithStack() const {
+    cout << "Blablalba affichage stack -> ";
     afficheGDIterWorker(ptrTete);
     cout << endl;
 }

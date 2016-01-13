@@ -74,6 +74,7 @@ private:
     void afficheDGWorker(const Cellule<TypeInfo>* ptrListe) const;
     void afficheGDIterWorker(Cellule<TypeInfo>* ptrListe) const;
     void afficheDGIterWorker(Cellule<TypeInfo>* ptrListe) const;
+    void afficheDGIterWithStackW(const Cellule<TypeInfo>* ptrListe) const;
 
 
 public:
@@ -116,6 +117,8 @@ public:
 
     // Affichage itératif de la liste ; parcours de gauche à droite
     void afficheDGIter() const;
+    
+    void afficheDGIterWithStack() const;
 
 }; // end ListeChainee
 
